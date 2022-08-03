@@ -1,0 +1,55 @@
+.product {
+  & .container_gap {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem 0rem 2rem;
+    gap: 20px;
+  }
+  & .container_space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 0rem;
+  }
+  & .Container_relative {
+    position: relative;
+  }
+  & .search {
+    position: absolute;
+    width: 10%;
+    padding: 0.2rem;
+    right: -120px;
+  }
+  & .input_search {
+    width: 170%;
+    height: 10%;
+    font-family: Lato;
+    font-weight: 700;
+  }
+ 
+  & .company_name {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.8rem 0 0 0;
+  }
+  & .category_container {
+    display: grid;
+    background: white;
+    padding: 2rem 0.8rem 2rem 0.8rem;
+    height: 100%;
+  }
+  & .categories {
+    font-weight: 700;
+    font-family: Lato;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    color: #4f5965;
+  }
+  & .category_list {
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+}

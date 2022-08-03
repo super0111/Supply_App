@@ -1,0 +1,151 @@
+.container_gap {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem 0rem 2rem;
+  gap: 20px;
+
+  & .container_space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 0rem;
+  }
+  & h2 {
+    font-family: Lato;
+  }
+  & .container_relative {
+    position: relative;
+  }
+  & .search {
+    position: absolute;
+    width: 10%;
+    padding: 0.2rem;
+    right: -120px;
+  }
+  & .input_search {
+    width: 170%;
+    height: 10%;
+    font-family: Lato;
+    font-weight: 700;
+  }
+  & .company_name {
+    font-size: 1rem;
+    font-family: Lato;
+    font-weight: 500;
+    padding: 0.8rem 0 0 0;
+  }
+  & .rfq_container {
+    background: white;
+    padding: 1rem 0rem;
+  }
+  & .rfq_container_display {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  & .rfq_btn {
+    font-weight: 500;
+    font-family: Lato;
+    color: white;
+    background: #0070d2;
+    border: none;
+    padding: 0 1rem;
+  }
+  & .quotations {
+    font-weight: 500;
+    font-family: Lato;
+    color: #8e8e8e;
+    padding: 0 2rem;
+  }
+  & .flex_container {
+    display: flex;
+  }
+  & .quotations_container {
+    font-weight: 500;
+    margin: 0 0 0 2rem;
+    display: flex;
+    border: 1px solid #d8dde6;
+    justify-content: center;
+    width: 12%;
+    align-items: center;
+    padding: 0.2rem 0.8rem;
+    gap: 0.2rem;
+  }
+  & .bg_container {
+    background: #0070d2;
+    border-radius: 4px;
+  }
+  & .orders {
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+  & .application {
+    font-weight: 500;
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    color: #5c708d;
+    font-size: 1rem;
+  }
+  & .contain {
+    margin: 0 0 0 1rem;
+    display: flex;
+    border: 1px solid #d8dde6;
+    justify-content: center;
+    width: 8%;
+    align-items: center;
+    padding: 0.2rem 0.8rem;
+    gap: 0.2rem;
+  }
+  & .order_container {
+    background: #17b46b;
+    border-radius: 4px;
+  }
+  & .state_container {
+    display: flex;
+    gap: 5px;
+    margin: 0px 0 -19px 0;
+  }
+  & .received_btn {
+    border: none;
+    background: white;
+    font-family: Lato;
+    color: #003b6e;
+    border-bottom: 3px solid #0070d2;
+    padding: 0.3rem 0.8rem;
+  }
+  & .finalised_btn {
+    border: none;
+    background: none;
+    font-family: Lato;
+    color: #8292aa;
+  }
+  & .table_container {
+    background: white;
+    padding: 1rem 2rem;
+    height: 100%;
+  }
+  & .table {
+    border: 2px solid #d8dde6;
+    padding: 20px;
+  }
+  & .Row {
+    color: #5c708d;
+    font-size: 0.8rem;
+  }
+  & .T_row {
+    border: 2px solid #d8dde6;
+    padding: 12px;
+    color: #5c708d;
+    font-size: 0.8rem;
+  }
+  & .T_division {
+    padding: 15px 35px;
+  }
+  & .S_division {
+    padding: 10px 35px;
+  }
+}

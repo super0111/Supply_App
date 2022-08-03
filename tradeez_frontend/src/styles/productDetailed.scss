@@ -1,0 +1,242 @@
+.proctScreenContainer {
+    background: #ffffff;
+    width: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+    .container1 {
+        .container1_col1 {
+            padding-bottom: 15px;
+            padding-top: 20px;
+            padding-left: 17px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+            .container1_col1_title {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: capitalize;
+                font-family: "Lato";
+                color: "#212738";
+            }
+            .innerContainer {
+                display: flex;
+                padding-top: 10px;
+                height: 50px;
+                align-items: center;
+                .innerContainermain {
+                    padding-left: 15px;
+                    .innerContainermainTitle {
+                        margin-bottom: 0px;
+                        font-family: "Lato";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-transform: capitalize;
+                        color: #212738;
+                    }
+                }
+            }
+            .showMoreMainContiner {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 16px;
+                align-items: center;
+                cursor: pointer;
+                .showMoreMainContinerTtile {
+                    padding-right: 18px;
+                    margin-bottom: 0px;
+                    font-family: "Lato";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 17px;
+                    text-transform: capitalize;
+                    color: #212738;
+                }
+            }
+        }
+        .container1_col2 {
+            width: "100%";
+            .main {
+                width: 100%;
+                border-radius: 8;
+                background: #d9d9d9;
+                height: 100%;
+            }
+        }
+    }
+    .sliderMain {
+        padding-left: 19px;
+        padding-top: 8px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+        .sliderTtile {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: capitalize;
+            font-family: "Lato";
+        }
+        .ProductSlider1 {
+            display: flex;
+            width: 100%;
+            padding-right: 10px;
+            .slidercontainer {
+                padding-top: 24px;
+                width: 90%;
+                .rightArrowDesign1 {
+                    width: 80px;
+                    height: 103px;
+                    text-align: center;
+                    cursor: pointer;
+                    .imagecontainer {
+                        height: 80px;
+                        width: 103px;
+                        img {
+                            height: 72px;
+                            width: 75px;
+                        }
+                        .textContainer {
+                            margin-bottom: 0px;
+                            font-family: "Lato";
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-align: center;
+                            text-transform: capitalize;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            .rightArrowDesign {
+                padding-top: 24px;
+                width: 15%;
+                display: flex;
+                cursor: pointer;
+                .imagecontainer {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50px;
+                    background: #e2f1f8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .imagecontainerMain {
+                        border-radius: 50px;
+                        background: white;
+                        z-index: 999;
+                        width: 45px;
+                        height: 45px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            height: 10px;
+                            width: 10px;
+                        }
+                    }
+                    img {
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+    .productmainConatiner {
+        .productTitle {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: capitalize;
+            font-family: "Lato";
+        }
+        .productCartContainer {
+            padding: 9px 11px;
+            height: 240px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            .main1 {
+                height: 162.16px;
+                background: #e5e5e5;
+                border-radius: 8px;
+            }
+            .main2 {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                .mainchild1 {
+                    font-family: "Lato";
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 400;
+                    color: #312828;
+                    font-style: "normal";
+                }
+                .mainchild2 {
+                    font-size: 12px;
+                    font-family: "Lato";
+                    padding-top: 5px;
+                    line-height: 14px;
+                    font-weight: 300;
+                    color: #312828;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 851px) and (max-device-width: 2560px) {
+    .slidercontainer {
+        width: 90% !important;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 399px) {
+    .slidercontainer {
+        width: 68% !important;
+    }
+}
+@media only screen and (min-device-width: 400px) and (max-device-width: 459px) {
+    .slidercontainer {
+        width: 76% !important;
+    }
+}
+@media only screen and (min-device-width: 460px) and (max-device-width: 599px) {
+    .slidercontainer {
+        width: 75% !important;
+    }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 700px) {
+    .slidercontainer {
+        width: 85% !important;
+    }
+}
+@media only screen and (min-device-width: 700px) and (max-device-width: 850px) {
+    .rightArrowDesign {
+        margin-right: 30px;
+    }
+    .slidercontainer {
+        width: 88% !important;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .blankMainContanier {
+        height: 50vh;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}

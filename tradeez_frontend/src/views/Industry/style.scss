@@ -1,0 +1,535 @@
+.PrductMainConatiner {
+    background: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+    padding-left: 64px;
+    padding-right: 64px;
+    .LeftSideBar {
+        .LeftSideBarmaincontainer {
+            height: 550px;
+        }
+    }
+    .rightSide {
+        padding-top: 2px;
+        .rightSideTtile {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            color: #4f5965;
+            margin-bottom: 0px;
+        }
+        .rightSideDescription {
+            text-align: justify;
+            padding-top: 30px;
+            margin-bottom: 0px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #5c708d;
+        }
+        .rightSidesubDescripotion {
+            text-align: justify;
+            padding-top: 5px;
+            margin-bottom: 0px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #5c708d;
+        }
+        .cartForm {
+            padding-top: 25px;
+            .cartFormTtile {
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: "#4F5965";
+            }
+            .formLabel {
+                margin-bottom: 0px;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: capitalize;
+                color: #5e5e5e;
+                .forminput {
+                    height: 40px;
+                    font-family: "Lato";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-transform: capitalize;
+                }
+                .dateInput {
+                    height: 40px;
+                    font-family: "Lato";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-transform: capitalize;
+                    width: 100%;
+                }
+            }
+            .FormBtnQuote {
+                height: 50px;
+                width: 127px;
+                background: #212738;
+                border-radius: 6px;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                text-transform: capitalize;
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+    }
+    .BtnQuickQuote {
+        width: 220px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        text-transform: capitalize;
+        color: #212738;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border: 1px solid #212738;
+    }
+}
+
+.ProductSlider {
+    width: 100%;
+    display: flex;
+    .react-multi-carousel-item {
+        width: 180px !important;
+    }
+    .rightArrowDesign {
+        padding-top: 24px;
+        width: 20%;
+        display: flex;
+        justify-content: end;
+        .rightArrowDesignSquire {
+            background: #d2d2d2;
+            border-radius: 4px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .imagecontainerMain {
+                border-radius: 50px;
+                background: white;
+                z-index: 999;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    height: 10px;
+                    width: 10px;
+                }
+            }
+        }
+    }
+}
+
+.boughtTogetherGrid {
+    padding-top: 48px;
+    .boughtTogetherGridTitle {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
+    // .boughtTogetherGridTitleGrid {
+    //     height: 485px;
+    //     position: relative;
+    .boughtTogetherGridTitleGridMainConatiner {
+        padding: 9px 11px;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+        .imageConatiner {
+            height: 313px;
+            background: #e5e5e5;
+            border-radius: 8px;
+        }
+        .TitleDescriptionConatiner {
+            padding-top: 12px;
+            .Ttile {
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: #4f5965;
+            }
+            .description {
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 100%;
+                text-transform: capitalize;
+                color: #5c708d;
+            }
+        }
+        .buttonContainer {
+            display: flex;
+            justify-content: space-between;
+            .addToQuote1 {
+                position: absolute;
+                bottom: 24px;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                text-transform: capitalize;
+                height: 50px;
+                padding: 0px 5px;
+                color: #212738;
+                border: 1px solid #212738;
+            }
+            .quickQuote {
+                position: absolute;
+                bottom: 24px;
+                right: 25px;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                text-transform: capitalize;
+                height: 50px;
+                padding: 0px 5px;
+                color: #212738;
+                border: 1px solid #212738;
+            }
+            .addToQuote {
+                position: absolute;
+                bottom: 24px;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                text-align: center;
+                text-transform: capitalize;
+                height: 50px;
+                padding: 0px 10px;
+                color: #212738;
+                border: 1px solid #212738;
+            }
+        }
+    }
+    // }
+}
+
+.SpecificationForThisTeam {
+    margin-top: 20px;
+    .SpecificationForThisTeamTtile {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #4f5965;
+    }
+
+    .title {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #6c706e;
+    }
+    .description {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #00202a;
+    }
+    .CementGradeTitile {
+        display: block;
+        flex: 0 0 45.83333333%;
+        max-width: 45.83333333%;
+    }
+    .CementGradeDescription {
+        display: block;
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+        margin-left: 12.5%;
+    }
+    .packingSizeTitile {
+        display: block;
+        flex: 0 0 45.83333333%;
+        max-width: 45.83333333%;
+    }
+    .packingSizeDescription {
+        display: block;
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+        margin-left: 12.5%;
+    }
+    .packingTypeTitle {
+        display: block;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .packingTypeDescription {
+        display: block;
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+        margin-left: 8.33333333%;
+    }
+    .FormFactorTtile {
+        display: block;
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+    }
+    .FormFactorDescription {
+        display: block;
+        flex: 0 0 54.16666667%;
+        max-width: 54.16666667%;
+        margin-left: 4.16666667%;
+    }
+    .SuitableForTtile {
+        display: block;
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+    }
+    .SuitableForDescripton {
+        display: block;
+        flex: 0 0 54.16666667%;
+        max-width: 54.16666667%;
+        margin-left: 4.16666667%;
+    }
+    .UsedForTitile {
+        display: block;
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+    }
+    .UsedForTtile {
+        display: block;
+        flex: 0 0 54.16666667%;
+        max-width: 54.16666667%;
+        margin-left: 4.16666667%;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    .PrductMainConatiner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media only screen and (min-device-width: 900px) and (max-device-width: 1480px) {
+    .CementGradeTitile {
+        font-size: 12px;
+    }
+    .CementGradeDescription {
+        font-size: 12px;
+    }
+    .packingSizeTitile {
+        font-size: 12px;
+    }
+    .packingSizeDescription {
+        font-size: 12px;
+    }
+
+    .packingTypeTitle {
+        font-size: 12px;
+    }
+    .packingTypeDescription {
+        font-size: 12px;
+    }
+    .FormFactorTtile {
+        font-size: 12px;
+    }
+    .FormFactorDescription {
+        font-size: 12px;
+    }
+    .SuitableForTtile {
+        font-size: 12px;
+    }
+    .SuitableForDescripton {
+        font-size: 12px;
+    }
+    .UsedForTitile {
+        font-size: 12px;
+    }
+    .UsedForTtile {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 990px) {
+    .CementGradeTitile {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+    }
+    .CementGradeDescription {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+        margin-left: 0px !important;
+    }
+    .packingSizeTitile {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+    }
+    .packingSizeDescription {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+        margin-left: 0px !important;
+    }
+
+    .packingTypeTitle {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+    }
+    .packingTypeDescription {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+        margin-left: 0px !important;
+    }
+    .FormFactorTtile {
+        display: block !important;
+        flex: 0 0 43.83333333% !important;
+        max-width: 43.83333333% !important;
+        font-size: 11px !important;
+    }
+    .FormFactorDescription {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+        margin-left: 0px !important;
+    }
+    .SuitableForTtile {
+        display: block !important;
+        flex: 0 0 43.83333333% !important;
+        max-width: 43.83333333% !important;
+        font-size: 11px !important;
+    }
+    .SuitableForDescripton {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+        margin-left: 0px !important;
+    }
+    .UsedForTitile {
+        display: block !important;
+        flex: 0 0 43.83333333% !important;
+        max-width: 43.83333333% !important;
+        font-size: 11px !important;
+    }
+    .UsedForTtile {
+        display: block !important;
+        flex: 0 0 45.83333333% !important;
+        max-width: 45.83333333% !important;
+        font-size: 11px !important;
+        margin-left: 0px !important;
+    }
+}
+@media only screen and (min-device-width: 990px) and (max-device-width: 992px) {
+    .CementGradeTitile {
+        font-size: 11px;
+    }
+    .CementGradeDescription {
+        font-size: 11px;
+    }
+    .packingSizeTitile {
+        font-size: 11px;
+    }
+    .packingSizeDescription {
+        font-size: 11px;
+    }
+
+    .packingTypeTitle {
+        font-size: 11px;
+    }
+    .packingTypeDescription {
+        font-size: 11px;
+    }
+    .FormFactorTtile {
+        font-size: 11px;
+    }
+    .FormFactorDescription {
+        font-size: 11px;
+    }
+    .SuitableForTtile {
+        font-size: 11px;
+    }
+    .SuitableForDescripton {
+        font-size: 11px;
+    }
+    .UsedForTitile {
+        font-size: 11px;
+    }
+    .UsedForTtile {
+        font-size: 11px;
+    }
+}
+@media only screen and (min-device-width: 1183px) and (max-device-width: 1900px) {
+    .boughtTogetherGridTitleGrid {
+        max-width: 25% !important;
+        flex: 0 0 25% !important;
+    }
+}
+
+.ProductSlider1 {
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 550px;
+    .react-multi-carousel-item {
+        width: 315px !important;
+        height: 510px;
+        padding: 12px;
+    }
+}

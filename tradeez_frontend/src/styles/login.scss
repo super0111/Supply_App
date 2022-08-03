@@ -1,0 +1,34 @@
+.login{
+&--list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    & div{
+        background-color: #212738;
+        padding: 20px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0px 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+.list{
+    display: grid;
+    grid-template-columns: 25%  25%  25%  25%;
+    grid-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    & div{
+        background-color: #212738;
+        width: 100%;
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+        font-weight: bolder;
+    }
+  }  
+}

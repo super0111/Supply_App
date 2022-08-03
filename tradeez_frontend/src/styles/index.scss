@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: normal;
+  src: local("MyFont"),
+    url("../assests/fonts/inter/Inter-Regular.ttf") format("truetype");
+}
+
+// Colors
+$yellow: #fce473;
+$pink: #c71585;
+$green: #46b13d;
+$green-active: #0ca000;
+$blue: #1d90ff;
+$grey: #999999;
+$grey-active: #cecece;
+$light-grey: #f1f1f1;
+$white: #ffffff;
+$black: #000000;
+
+$primary-color: $green;
+$secondary-color: $yellow;
+
+// Fonts
+$serif: "inter", "Playfair Display", Georgia, serif;
+$sans-serif: "Roboto", "Source Sans Pro", "Open Sans", Arial, sans-serif;
+$monospace: "Inconsolata", monospace;
+
+$primary-font: $sans-serif;
+$secondary-font: $serif;
+
+// Spacing
+$mobile-space: 10px;
+$desktop-space: 35px;
+@import "card";
+@import "product";
+@import "quotations";
+@import "header";
+@import "common";
+@import "home";
+@import "SideBar";
+@import "banner";
+@import "footer";
+@import "login";
+@import "sellerKYC";
+@import "sideBarData";
+@import "products";
+
+body {
+  font-family: $primary-font;
+  background-color: #e5e5e5;
+}

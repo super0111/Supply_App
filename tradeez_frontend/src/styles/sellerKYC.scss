@@ -1,0 +1,143 @@
+.sellerkyc{
+    padding: 10px;
+    & .panel{
+        box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.1);
+        margin: 30px 0px;
+        & .title{
+            display: inline-block;
+            width: 100%;
+            font-size: 32px;
+            height: 75px;
+            padding: 10px 10px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-bottom: 80px;
+        }
+        & .section{
+            background-color: #fff;
+            padding: 10px 10px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            & input{
+                filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+            }
+        }
+    }
+}
+.submit2 {
+    background-color: #F2F1F2;
+    padding: 50px;
+    .header {
+      padding: 20px 40px 50px 40px;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+      span {
+        font-size: 18px;
+        font-weight: 700;
+        color: #212738;
+      }
+    }
+    .body {
+      padding: 20px 40px 50px 40px;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      .body_title {
+        font-size: 17px;
+        font-weight: 600;
+        color: #212738;
+        margin-bottom: 10px;
+      }
+      .upload {
+        width: 70%;
+        background-color: white;
+        color: #A4A2A2;
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid #A4A2A2;
+        border-left: 1px solid #A4A2A2;
+        display: flex;
+        padding: 15px;
+      }
+      .upload_img {
+        width: 25px;
+        height: 20px;
+        margin-left: 10px;
+      }
+    }
+    .body2 {
+      padding: 20px 40px 50px 40px;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      .body_field {
+        width: 50%;
+        span {
+          color: #878686;
+        }
+        .small_text {
+          font-size: 12px;
+        }
+      }
+      .uplaod_field {
+        width: 10%;
+      }
+      .upload2 {
+        background-color: white;
+        color: #A4A2A2;
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid #A4A2A2;
+        border-left: 1px solid #A4A2A2;
+        display: flex;
+        padding: 15px;
+      }
+      .upload_img {
+        width: 25px;
+        height: 20px;
+        margin-left: 10px;
+      }
+    }
+    .text_agree {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #212738;
+    }
+    .text_red {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      text-transform: capitalize;
+      color: #F74952;
+    }
+  }
+
+  @media screen and (max-width: "1280px") {
+    .submit2 .body .upload {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: "1150px") {
+    .submit2 .body2 .body_field {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: "900px") {
+    .submit2 .body2 .body_field {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: "500px") {
+    .App_body {
+    }
+    .submit2 .body {
+      padding: 10px 10px 10px 10px;
+    }
+  }
+  .is-invalid {
+    font-size: 15px;
+    color: #f9241e;
+    margin: 5px;
+  }

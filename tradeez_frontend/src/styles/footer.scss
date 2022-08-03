@@ -1,0 +1,33 @@
+.footer {
+  background-color: #212738;
+  padding: 45px 0px;
+  color: #fff;
+  & .footerImage {
+    width: 220px;
+    height: 50px;
+  }
+  &_links {
+    display: flex;
+    & .links {
+      display: flex;
+      padding: 10px 20px;
+      flex-direction: column;
+      & .link {
+        padding: 10px 0;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+      }
+    }}
+  & p {
+    font-size: 12px;
+  }
+  & .item {
+    flex: 0 0 16%;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 35%;
+  }
+}

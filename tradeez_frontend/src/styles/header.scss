@@ -1,0 +1,11 @@
+.header{
+    padding: 1.5% 1%;
+    background: #fff;
+    & .btn{
+        margin: 0px 10px;
+        line-height: 2;
+    }
+    & .logo{
+        width: 230px;
+    }
+}
