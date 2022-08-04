@@ -27,13 +27,10 @@ const BoughtTogether = () => {
       {
         items.length && (
           <Carousel 
-            viewportWidth="100%" 
-            cellPadding={1} 
-            imagesToPrefetch={2}
-            lazyLoad={true}
-            
-            maxRenderedSlides={2}
-            slideAlignment={'left'}
+            viewportWidth="1200px"
+            cellPadding={ 10 }
+            maxRenderedSlides={5}
+            slideAlignment={'center'}
           >
             {items.map((item) => (
               <div className="item">
