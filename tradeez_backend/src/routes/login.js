@@ -44,6 +44,8 @@ Router.post("/", async (req, res) => {
             expiresIn: "2h",
           }
         );
+
+        console.log("tokentoken", token)
         res.status(200).json({
           token,
           name: user.name,

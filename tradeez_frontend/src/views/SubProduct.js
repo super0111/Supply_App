@@ -11,7 +11,7 @@ const SubProduct = () => {
   const fetchProduct = () => {
     axios({
       method: "get",
-      url: `${process.env.REACT_APP_API_URL}product/?category=${product}&product=${subproduct}`,
+      url: `${process.env.REACT_APP_API_URL}products/?category=${product}&product=${subproduct}`,
     }).then((res) => {
       setCategoriesList(res.data);
     });
@@ -42,7 +42,7 @@ const SubProduct = () => {
                   <img src={category.img} alt="stock" />
                   <Link
                     className="buttonStyle"
-                    to={`/product/${product}/${subproduct}/addquote`}
+                    to={`/products/${product}/${subproduct}/addquote`}
                   >
                     {category.value}
                   </Link>

@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { Avatar, Card, Col, Row, List } from "antd";
 import contextImage from "../assests/images/ProductsImg/R13.png";
-const ProductCard = ({ image, title, value }) => {
+const ProductCard = ({ id, image, title, value }) => {
+  const navigate = useNavigate()
+  const handleSelectProduct= (id) => {
+    navigate(`/productDetails/${id}`)
+  }
+
   return (
     <Col
       xs={{ span: 24 }}
@@ -11,7 +16,7 @@ const ProductCard = ({ image, title, value }) => {
       xl={{ span: 4 }}
       lg={{ span: 6 }}
     >
-      <div className="productCartContainer">
+      <div className="productCartContainer" onClick={()=>handleSelectProduct(id)}>
         <div className="main1">
           <img src={contextImage} />
         </div>

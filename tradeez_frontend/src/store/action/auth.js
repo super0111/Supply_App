@@ -36,6 +36,8 @@ const logoutUser = () => {
 
 export const login = (data) => {
   return (dispatch) => {
+console.log("data", data)
+
     dispatch(loginProcessing());
     axios({
       method: "post",
@@ -47,6 +49,8 @@ export const login = (data) => {
       },
     })
       .then((response) => {
+
+        console.log("responseresponse", response)
         const user = {
           name: response.data.name,
           id: response.data.id,

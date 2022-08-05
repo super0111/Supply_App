@@ -33,10 +33,23 @@ Router.post("/", (req, res) => {
 });
 
 Router.get("/:id", (req, res) => {
+  console.log("this is get")
   //const sql = `SELECT po.id, po.name, po.product_long_desc, ca.category_name, ca.category_value, sc.sub_category_name, sc.sub_category_value from products AS po INNER JOIN categories AS ca ON po.category_id = ca.category_id INNER JOIN sub_category AS sc ON sc.sub_category_id = po.sub_category_id  WHERE po.id = "${req.params.id}"`;
   //const sql = `SELECT qa.quantity, po.name, sp.name from quotations AS qa INNER JOIN products AS po ON po.id = qa.product_id INNER JOIN sub_products AS sp ON sp.id = qa.sub_product_id  WHERE qa.id = "${req.params.id}"`;
   const sql = `SELECT qa.quantity, qa.sub_product_id, sp.name from quotations AS qa INNER JOIN sub_products AS sp ON sp.id = qa.sub_product_id  WHERE qa.id = "${req.params.id}"`;
   mysqlConnection.query(sql, (err, rows, fields) => {
+    if (!err) {
+      return res.status(200).json(rows);
+    }
+    res.send(err);
+  });
+});
+
+Router.get("/productDetails/:id", (req, res) => {
+  console.log("iddd", req.params.id)
+  sql = `SELECT id,product_id,title,details1, details2,grade,size,type,factor,suitableFor,usedFor from products_detail WHERE product_id = "${req.params.id}"`;
+
+  mysqlConnection.query(sql, (err, rows) => {
     if (!err) {
       return res.status(200).json(rows);
     }

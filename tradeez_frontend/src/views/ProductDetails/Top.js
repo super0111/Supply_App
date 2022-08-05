@@ -12,7 +12,9 @@ const imgs =  [
   { url: "/images/details/1 (5).png" },
 ]
 
-const Top = () => {
+const Top = (props) => {
+  const { productDetails } = props;
+  console.log("productDetails",productDetails)
   const [ isShow, setIsShow ] = useState(true);
   const [ selectedImg, setSelectedImg ] = useState(0);
 
@@ -91,9 +93,9 @@ const Top = () => {
           }}
           className="details"
         >
-          <div className='title'>PPC Cement, 43 Grade, 25 Kg</div>
-          <p>This grade of cement is used for plain concrete work and plastering works. It is suitable make concrete mix up to M30.</p>
-          <p>Cement is mainly used as a binder in concrete, which is a basic material for all types of construction, including housing, roads, schools, hospitals, dams and ports.</p>
+          <div className='title'>{productDetails?.title}</div>
+          <p>{productDetails?.details1}</p>
+          <p>{productDetails?.details2}</p>
           <Box display='flex' flexDirection="column">
             <form className="form" onSubmit={formik.handleSubmit}>
               { isShow === true ?
@@ -259,33 +261,27 @@ const Top = () => {
                 <TableRow
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
-                  <TableCell component="th" scope="row">
-                    Cement Grade:
-                  </TableCell>
-                  <TableCell align="left" className='fontBold'>43 Grade</TableCell>
+                  <TableCell component="th" scope="row">Cement Grade:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.grade} Grade</TableCell>
                   <TableCell align="left">Form Factor:</TableCell>
-                  <TableCell align="left" className='fontBold'>Powder</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.factor}</TableCell>
 
                 </TableRow>
                 <TableRow
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
-                  <TableCell component="th" scope="row">
-                    Packaging Size:
-                  </TableCell>
-                  <TableCell align="left" className='fontBold'>25 Kg</TableCell>
-                  <TableCell align="left">Packaging Type:</TableCell>
-                  <TableCell align="left" className='fontBold'>Indoor</TableCell>
+                  <TableCell component="th" scope="row">Packaging Size:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.size} Kg</TableCell>
+                  <TableCell align="left">Suitable For:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.suitableFor}</TableCell>
                 </TableRow>
                 <TableRow
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
-                  <TableCell component="th" scope="row">
-                    Packaging Type:
-                  </TableCell>
-                  <TableCell align="left" className='fontBold'>Paper Sack</TableCell>
-                  <TableCell align="left">Packaging Type:</TableCell>
-                  <TableCell align="left" className='fontBold'>All Purpose Cement</TableCell>
+                  <TableCell component="th" scope="row">Packaging Type:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.type}</TableCell>
+                  <TableCell align="left">Used For:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.usedFor}</TableCell>
                 </TableRow>
               </TableBody>
             </Table>

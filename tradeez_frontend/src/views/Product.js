@@ -15,13 +15,14 @@ const Product = (props) => {
   const user = useSelector((state) => state.productDetails);
   const userInfo = useSelector((state) => state.auth);
   const [products, setProducts] = useState([]);
-  //let { product } = useParams();
+  
+  console.log("productsproducts", products)
   useEffect(() => {
     fetchProduct();
   }, []);
   const fetchProduct = () => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}product/?category=${product}`, {
+      .get(`${process.env.REACT_APP_API_URL}products/?category=${product}`, {
         headers: { Authorization: `Bearer ${userInfo.user.token}` },
       })
       .then((res) => {
@@ -30,7 +31,7 @@ const Product = (props) => {
   };
   const handleNavigation = (category) => {
     dispatch(selectedProduct(category));
-    navigate(`/product/${category.id}/addquote`);
+    navigate(`/products/${category.id}/addquote`);
   };
   return (
     <div className="container_gap">

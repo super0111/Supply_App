@@ -15,7 +15,7 @@ const Product = () => {
   }, []);
   const fetchProduct = () => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}product`, {
+      .get(`${process.env.REACT_APP_API_URL}products`, {
         headers: { Authorization: `Bearer ${user.user.token}` },
       })
       .then((res) => {

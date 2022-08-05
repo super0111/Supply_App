@@ -69,7 +69,7 @@ app.use(
 
 app.use("/quotes", auth, Quotes);
 
-app.use("/product", auth, ProductRoutes);
+app.use("/products", auth, ProductRoutes);
 
 app.use("/order", auth, OrderRoutes);
 

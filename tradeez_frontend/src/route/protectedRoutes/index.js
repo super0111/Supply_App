@@ -29,7 +29,7 @@ const ProtectedRoutes = () => {
           </div>
         }
       >
-        <Route path="product/:product/:subproduct" element={<SubProduct />} />
+        <Route path=":product/:subproduct" element={<SubProduct />} />
         <Route path="quotations" element={<Quotations />} />
         <Route path="account" element={<Myaccount />} />
         <Route
@@ -58,7 +58,7 @@ const ProtectedRoutes = () => {
         <Route path="product/:product/addquote" element={<AddQuote />} />
         <Route path="orders" element={<Orders />} />
         <Route path="payment" element={<Payment />} />
-        <Route path="product/:productname" element={<ProductDetails />} />
+        <Route path="productDetails/:id" element={<ProductDetails />} />
       </Route>
       <Route path="account-details" element={<AddAccountDetails />} />
       <Route

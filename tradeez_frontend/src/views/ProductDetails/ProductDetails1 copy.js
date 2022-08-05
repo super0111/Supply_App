@@ -100,7 +100,7 @@ const ProductView = () => {
   let ref = useRef();
   return (
     <div className="PrductMainConatiner">
-      {/* <Row gutter={[16, 16]} style={{ marginTop: 20 }}>
+      <Row gutter={[16, 16]} style={{ marginTop: 20 }}>
         <Col lg={{ span: 11 }} className="LeftSideBarmain">
           <div className="LeftSideBarmaincontainer">
             <img
@@ -361,7 +361,7 @@ const ProductView = () => {
             </Row>
           </div>
         </Col>
-      </Row> */}
+      </Row>
 
       <div className="boughtTogetherGrid">
         <p className="boughtTogetherGridTitle">Bought together</p>
