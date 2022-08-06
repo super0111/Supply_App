@@ -46,7 +46,7 @@ const Login = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-6">
-            <img src={Image} />
+            <img style={{width: "100%"}} src={Image} />
           </div>
           <div className="col-6">
             <h3>Get’s started.</h3>

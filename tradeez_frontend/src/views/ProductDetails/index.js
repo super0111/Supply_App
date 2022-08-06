@@ -28,8 +28,10 @@ const ProductView = () => {
 
   return (
     <div className="details1">
-      <Top productDetails={productDetails}/>
-      <BoughtTogether />
+      <div style={{ padding: '50px 0px' }}>
+        <Top productDetails={productDetails}/>
+        <BoughtTogether />
+      </div>
     </div>
   )
 }

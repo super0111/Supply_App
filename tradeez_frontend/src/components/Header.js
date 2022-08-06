@@ -9,7 +9,7 @@ const Header = () => {
     <header className="header">
       <div className="container-xxl d-flex justify-content-lg-between justify-content-md-between ">
         <div className="logo">
-          <img src="" alt={logo} style={{ width: "80%", height: "90%" }} />
+          <img src={logo} alt="" style={{ width: "80%", height: "90%" }} />
         </div>
 
         {isAuthenticated ? (

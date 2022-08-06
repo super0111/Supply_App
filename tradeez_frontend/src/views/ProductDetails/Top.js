@@ -14,7 +14,6 @@ const imgs =  [
 
 const Top = (props) => {
   const { productDetails } = props;
-  console.log("productDetails",productDetails)
   const [ isShow, setIsShow ] = useState(true);
   const [ selectedImg, setSelectedImg ] = useState(0);
 
@@ -46,7 +45,7 @@ const Top = (props) => {
   });
 
   return(
-    <div className="top">
+    <div className="top" style={{padding:"0 50px"}}>
       <div className="title">Industry</div>
       <div className="title_text">Construction <BsChevronRight /> Cement <BsChevronRight /> PCC Cement</div>
       <Grid container
@@ -114,16 +113,9 @@ const Top = (props) => {
                   >
                     <div className='dflex'>
                       <strong>Quantity</strong>
-                      <TextField
-                        sx={{
-                          width: "90%",
-                          marginTop: "5px",
-                          '@media (max-width: 900px)' : {
-                            width: "100%",
-                          }
-                        }}
-                        fullWidth
-                        placeholder='director kyc'
+                      <input
+                        type="text"
+                        placeholder='Enter Quantity'
                         className='text_input'
                         {...formik.getFieldProps("field1")}
                       />
@@ -132,16 +124,10 @@ const Top = (props) => {
                       ) : null}
                     </div>
                     <div className='dflex'>
-                      <strong>Price Target</strong>
-                      <TextField
-                        sx={{
-                          width: "90%",
-                          marginTop: "5px",
-                          '@media (max-width: 900px)' : {
-                            width: "100%",
-                          }
-                        }}
-                        placeholder='director kyc'
+                      <strong>Delivery Date</strong>
+                      <input
+                        type="text"
+                        placeholder='DD/MM/YYYY'
                         className='text_input'
                         {...formik.getFieldProps("field2")}
                       />
@@ -159,16 +145,10 @@ const Top = (props) => {
                     }}
                   >
                     <div className='dflex'>
-                      <strong>Delivery Date</strong>
-                      <TextField
-                        sx={{
-                          width: "90%",
-                          marginTop: "5px",
-                          '@media (max-width: 900px)' : {
-                            width: "100%",
-                          }
-                        }}
-                        placeholder='director kyc'
+                      <strong>Price Target</strong>
+                      <input
+                        type="text"
+                        placeholder='Enter Price Target'
                         className='text_input'
                         {...formik.getFieldProps("field3")}
                       />
@@ -178,15 +158,9 @@ const Top = (props) => {
                     </div>
                     <div className='dflex'>
                       <strong>Delivery Frequency</strong>
-                      <TextField
-                        sx={{
-                          width: "90%",
-                          marginTop: "5px",
-                          '@media (max-width: 900px)' : {
-                            width: "100%",
-                          }
-                        }}
-                        placeholder='director kyc'
+                      <input
+                        type="text"
+                        placeholder='Enter Delivery Frequency'
                         className='text_input'
                         {...formik.getFieldProps("field4")}
                       />
@@ -196,13 +170,10 @@ const Top = (props) => {
                     </div>
                   </Grid>
                   <strong>Delivery Location</strong>
-                  <TextField
-                    fullWidth
-                    placeholder='director kyc'
+                  <input
+                    type="text"
+                    placeholder='Address...'
                     className='text_input'
-                    sx={{
-                      marginTop: "5px"
-                    }}
                     {...formik.getFieldProps("field5")}
                   />
                   {formik.touched.field5 && formik.errors.field5 ? (

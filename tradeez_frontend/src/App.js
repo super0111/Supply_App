@@ -34,13 +34,15 @@ function App() {
 // react-elastic-carousel
 
   return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter>
-          <AppRoutes />
-        </BrowserRouter>
-      </PersistGate>
-    </Provider>
+    <div className="">
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <BrowserRouter>
+            <AppRoutes />
+          </BrowserRouter>
+        </PersistGate>
+      </Provider>
+    </div>
   );
 }
 

@@ -23,10 +23,12 @@ const ProtectedRoute = ({ role }) => {
   if (!isAuthenticated) return <Navigate to="/buyerlogin" />;
 
   return (
-    <>
+    <div style={{ display: 'flex', width: "98%" }}>
       <SideBar />
-      <Outlet />
-    </>
+      <div style={{width: "100%"}}>
+        <Outlet />
+      </div>
+    </div>
   );
 };
 
