@@ -261,27 +261,26 @@ const Top = (props) => {
                 <TableRow
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
-                  <TableCell component="th" scope="row">Cement Grade:</TableCell>
-                  <TableCell align="left" className='fontBold'>{productDetails?.grade} Grade</TableCell>
-                  <TableCell align="left">Form Factor:</TableCell>
-                  <TableCell align="left" className='fontBold'>{productDetails?.factor}</TableCell>
-
+                  <TableCell component="th" scope="row">{productDetails?.itemTitle1}:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.itemText1}</TableCell>
+                  <TableCell align="left">{productDetails?.itemTitle2}:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.itemText2}</TableCell>
                 </TableRow>
                 <TableRow
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
-                  <TableCell component="th" scope="row">Packaging Size:</TableCell>
-                  <TableCell align="left" className='fontBold'>{productDetails?.size} Kg</TableCell>
-                  <TableCell align="left">Suitable For:</TableCell>
-                  <TableCell align="left" className='fontBold'>{productDetails?.suitableFor}</TableCell>
+                  <TableCell component="th" scope="row">{productDetails?.itemTitle3}:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.itemText3}</TableCell>
+                  <TableCell align="left">{productDetails?.itemTitle4}:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.itemText4}</TableCell>
                 </TableRow>
                 <TableRow
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
-                  <TableCell component="th" scope="row">Packaging Type:</TableCell>
-                  <TableCell align="left" className='fontBold'>{productDetails?.type}</TableCell>
-                  <TableCell align="left">Used For:</TableCell>
-                  <TableCell align="left" className='fontBold'>{productDetails?.usedFor}</TableCell>
+                  <TableCell component="th" scope="row">{productDetails?.itemTitle5}:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.itemText5}</TableCell>
+                  <TableCell align="left">{productDetails?.itemTitle6}:</TableCell>
+                  <TableCell align="left" className='fontBold'>{productDetails?.itemText6}</TableCell>
                 </TableRow>
               </TableBody>
             </Table>

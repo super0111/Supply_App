@@ -1,8 +1,8 @@
-// import logo from "../assests/images/logo_dark.png";
+import logo from "../assests/images/logo_dark.png";
 import fb from "../assests/images/fb.png";
 import linkedin from "../assests/images/linkedin.png";
-// import twitter from "../assests/images/twitter.png";
-// import youtube from "../assests/images/youtube.png";
+import twitter from "../assests/images/twitter.png";
+import youtube from "../assests/images/youtube.png";
 import instagram from "../assests/images/instagram.png";
 import lang from "../assests/icons/lang.svg";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container-xxl">
         <div className="row footer">
           <div className="col-12 col-md-6">
-            <img src="logo" className="footerImage" alt="logo" />
+            <img src={logo} className="footerImage" alt="logo" />
           </div>
           <div className="col-12 col-md-6">
             <div className="footer_links row">
@@ -47,8 +47,8 @@ const Footer = () => {
               }}
             >
               <img className="item" src={fb} alt="fb" />
-              <img className="item" src="twitter" alt="twitter" />
-              <img className="item" src="youtube" alt="youtube" />
+              <img className="item" src={twitter} alt="twitter" />
+              <img className="item" src={youtube} alt="youtube" />
               <img className="item" src={linkedin} alt="linkedin" />
               <img className="item" src={instagram} alt="instagram" />
             </div>

@@ -8,7 +8,9 @@ import ProductCard from "../components/ProductCard";
 import { selectedProduct } from "../store/action/productDetails";
 // import Search from "../assests/images/search.svg";
 import AuthHeader from "../components/AuthHeader";
+
 const product = 1;
+
 const Product = (props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -16,7 +18,6 @@ const Product = (props) => {
   const userInfo = useSelector((state) => state.auth);
   const [products, setProducts] = useState([]);
   
-  console.log("productsproducts", products)
   useEffect(() => {
     fetchProduct();
   }, []);
@@ -29,6 +30,7 @@ const Product = (props) => {
         setProducts(res.data);
       });
   };
+  
   const handleNavigation = (category) => {
     dispatch(selectedProduct(category));
     navigate(`/products/${category.id}/addquote`);
@@ -37,16 +39,6 @@ const Product = (props) => {
     <div className="container_gap">
       <AuthHeader />
       <div className="category_container content-section">
-        {/* <div className="category_list">
-          {categoriesList?.map((category, index) => (
-            <div className="miniCard" key={index}>
-              <img src={category.img} alt="stock" />
-              <Link className="buttonStyle" to={`/product/${category.route}`}>
-                {category.text}
-              </Link>
-            </div>
-          ))}
-        </div> */}
         <div className="proctScreenContainer container">
           <Row
             gutter={[16, 16]}
@@ -69,7 +61,7 @@ const Product = (props) => {
                       <div className="innerContainermain">
                         <Link
                           className="buttonStyle text-decation-none"
-                          to={`/product/${d.id}`}
+                          to={`/productList`}
                         >
                           {d.value}
                         </Link>
@@ -78,6 +70,7 @@ const Product = (props) => {
                   );
                 }
               })}
+
               {products.length > 6 ? (
                 <div className="showMoreMainContiner">
                   <p className="showMoreMainContinerTtile">Show More </p>

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Orders from "../../views/Orders";
 import Payment from "../../views/Payment";
 import Product from "../../views/Product";
+import ProductList from "../../views/ProductList";
 import Quotations from "../../views/Quotations";
 import Myaccount from "../../views/Myaccount";
 import SubProduct from "../../views/SubProduct";
@@ -48,6 +49,7 @@ const ProtectedRoutes = () => {
       >
         {/* <Route path="product" element={<Categories />} /> */}
         <Route path="product" element={<Product />} />
+        <Route path="productList" element={<ProductList />} />
         <Route path="product/:product/:subproduct" element={<SubProduct />} />
         <Route path="quotations" element={<Quotations />} />
         <Route path="account" element={<Myaccount />} />

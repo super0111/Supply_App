@@ -16,7 +16,7 @@ const ProductCard = ({ id, image, title, value }) => {
       xl={{ span: 4 }}
       lg={{ span: 6 }}
     >
-      <div className="productCartContainer" onClick={()=>handleSelectProduct(id)}>
+      <div className="productCartContainer">
         <div className="main1">
           <img src={contextImage} />
         </div>

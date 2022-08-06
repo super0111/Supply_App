@@ -45,10 +45,18 @@ Router.get("/:id", (req, res) => {
   });
 });
 
-Router.get("/productDetails/:id", (req, res) => {
-  console.log("iddd", req.params.id)
-  sql = `SELECT id,product_id,title,details1, details2,grade,size,type,factor,suitableFor,usedFor from products_detail WHERE product_id = "${req.params.id}"`;
+Router.get("/productList/:id", (req, res) => {
+  sql = `SELECT id, title, text, url, product_id from productlists WHERE categories_type = "${req.params.id}"`;
+  mysqlConnection.query(sql, (err, rows) => {
+    if (!err) {
+      return res.status(200).json(rows);
+    }
+    res.send(err);
+  });
+});
 
+Router.get("/productDetails/:id", (req, res) => {
+  sql = `SELECT id,product_id,title,details1, details2,itemTitle1,itemTitle2,itemTitle3,itemTitle4,itemTitle5,itemTitle6,itemText1,itemText2,itemText3,itemText4,itemText5,itemText6 from products_detail WHERE product_id = "${req.params.id}"`;
   mysqlConnection.query(sql, (err, rows) => {
     if (!err) {
       return res.status(200).json(rows);

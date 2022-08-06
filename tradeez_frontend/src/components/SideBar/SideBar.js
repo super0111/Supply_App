@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
-//import logo from "../../assets/images/logoDash.svg";
 import { buyerMenu, sellerMenu } from "./SideBarData";
-// import logo from "../../assests/images/logoDash.png";
+import logo from "../../assests/images/logoDash.png";
 import { useUserRole } from "../../hooks/auth";
 import "../../styles/SideBar.scss";
 
@@ -11,7 +10,7 @@ const SideBar = ({ children, to, ...props }) => {
     <aside className="header-wrapper">
       <nav>
         <Link to={"/"}>
-          <img className="logo" src="logo" alt="logodash"></img>
+          <img className="logo" src={logo} alt="logodash"></img>
         </Link>
         <ul>
           {userRole === "buyer" &&
