@@ -20,7 +20,6 @@ const ProductList = () => {
       });
   };
 
-  console.log("productsproducts",products)
 
   return (
     <div className="container_gap">
