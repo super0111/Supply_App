@@ -217,9 +217,7 @@ const Top = (props) => {
           </div>
           <TableContainer 
             component={Paper}
-            sx={{
-              width: "100%"
-            }}
+            sx={{ width: "100%" }}
           >
             <Table 
               sx={{ 
