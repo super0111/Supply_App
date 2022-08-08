@@ -212,7 +212,9 @@ const Top = (props) => {
             </form>
           </Box>
 
-          <div className='title_mid'>Specifications For This Item</div>
+          <div className='title_mid'>
+            Specifications For This Item
+          </div>
           <TableContainer 
             component={Paper}
             sx={{
