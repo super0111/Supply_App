@@ -1,15 +1,7 @@
 import {
-  Avatar,
-  Card,
-  Col,
-  Row,
-  List,
   Button,
-  Form,
-  Input,
-  DatePicker,
 } from "antd";
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 let productData = [
@@ -74,7 +66,6 @@ const ProductCard = ({ image, title, details, index }) => {
       )}
     </div>
   );
-  // </Col>
 };
 
 const ProductView = () => {
