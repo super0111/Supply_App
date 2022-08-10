@@ -8,6 +8,7 @@ import { login } from "../store/action/auth";
 import { useDispatch } from "react-redux";
 import { useAuth } from "../hooks/auth";
 import Image from "../assests/images/login.png";
+import Footer from "../components/Footer";
 
 const LoginValidation = yup.object().shape({
   email: yup.string().email().required(),
@@ -46,7 +47,7 @@ const Login = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-6">
-            <img style={{width: "100%"}} src={Image} />
+            <img style={{ width: "100%" }} src={Image} />
           </div>
           <div className="col-6">
             <h3>Get’s started.</h3>
@@ -110,6 +111,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,31 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
-import { Avatar, Card, Col, Row, List } from "antd";
+import { useNavigate } from "react-router-dom";
+import Grid from '@mui/material/Grid';
 import contextImage from "../assests/images/ProductsImg/R13.png";
+
 const ProductCard = ({ id, image, title, value }) => {
   const navigate = useNavigate()
-  const handleSelectProduct= (id) => {
-    navigate(`/productDetails/${id}`)
-  }
 
   return (
-    <Col
-      xs={{ span: 24 }}
-      sm={{ span: 12 }}
-      md={{ span: 8 }}
-      xl={{ span: 4 }}
-      lg={{ span: 6 }}
-    >
-      <div className="productCartContainer">
-        <div className="main1">
-          <img src={contextImage} />
-        </div>
-        <div className="main2">
-          <div className="mainchild1">{title}</div>
-          <div className="mainchild2">{value}</div>
+    <Grid md={2}>
+      <div style={{padding: "5px"}}>
+        <div className="productCartContainer">
+          <div className="main1">
+            <img src={contextImage} />
+          </div>
+          <div className="main2">
+            <div className="mainchild1">{title}</div>
+            <div className="mainchild2">{value}</div>
+          </div>
         </div>
       </div>
-    </Col>
+    </Grid>
   );
 };
 

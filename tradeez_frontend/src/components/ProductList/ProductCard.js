@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
-import { Avatar, Card, Col, Row, List } from "antd";
-import contextImage from "../../assests/images/ProductsImg/R13.png";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Grid from '@mui/material/Grid';
+
 const ProductCard = ({ product_id, title, text, url }) => {
 
   const navigate = useNavigate()
@@ -10,13 +10,7 @@ const ProductCard = ({ product_id, title, text, url }) => {
   }
 
   return (
-    <Col
-      xs={{ span: 24 }}
-      sm={{ span: 12 }}
-      md={{ span: 8 }}
-      xl={{ span: 4 }}
-      lg={{ span: 6 }}
-    >
+    <Grid item lg={2} md={3} sm={6} xs={12}>
       <div className="productCard" onClick={()=>handleSelectProduct(product_id)}>
         <div className="card_img">
           <img src={url} />
@@ -26,7 +20,7 @@ const ProductCard = ({ product_id, title, text, url }) => {
           <div className="text">{text}</div>
         </div>
       </div>
-    </Col>
+    </Grid>
   );
 };
 

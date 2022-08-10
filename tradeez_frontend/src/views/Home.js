@@ -1,17 +1,17 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
-// import metals from "../assests/images/metals.svg";
+import metals from "../assests/images/metals.svg";
 import cement from "../assests/images/cement.svg";
-// import pharmaceuticals from "../assests/images/pharmaceuticals.svg";
+import pharmaceuticals from "../assests/images/pharmaceuticals.svg";
 import chemicals from "../assests/images/chemicals.svg";
-// import packages from "../assests/images/packages.svg";
-// import polymere from "../assests/images/polymere.svg";
+import packages from "../assests/images/packages.svg";
+import polymere from "../assests/images/polymere.svg";
 import agriculture from "../assests/images/agriculture.svg";
-// import textile from "../assests/images/textile.svg";
+import textile from "../assests/images/textile.svg";
 import circular from "../assests/images/circular.png";
-// import rectangular from "../assests/images/rectangular.png";
-// import square from "../assests/images/square.png";
+import rectangular from "../assests/images/rectangular.png";
+import square from "../assests/images/square.png";
 import easy from "../assests/icons/easy.svg";
 import network from "../assests/icons/network.svg";
 import reliability from "../assests/icons/reliability.svg";
@@ -24,11 +24,7 @@ import { useSelector } from "react-redux";
 
 const Home = () => {
   const navigate = useNavigate();
-
   const user = useSelector((state) => state.auth);
-
-  console.log(user);
-
   const handleRedirect = () => {
     navigate("/product");
   };
@@ -70,7 +66,7 @@ const Home = () => {
             <div className="categorylist row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 row-cols-sm-2 ">
               <div className="col">
                 <div className="card">
-                  <img src="metals" className="card-img-top" alt="..." />
+                  <img src={metals} className="card-img-top" alt="..." />
                   <h5 className="inter_med">Metals & Alloys</h5>
                   <div className="card-body categorylist_button">
                     <button className="butto-primaryn">25K+ orders</button>
@@ -79,7 +75,7 @@ const Home = () => {
               </div>
               <div className="col">
                 <div className="card">
-                  <img src="packages" className="card-img-top" alt="..." />
+                  <img src={packages} className="card-img-top" alt="..." />
                   <h5 className="inter_med">Packaging & Printing</h5>
                   <div className="card-body categorylist_button">
                     <button className="butto-primaryn">25K+ orders</button>
@@ -97,7 +93,7 @@ const Home = () => {
               </div>
               <div className="col">
                 <div className="card">
-                  <img src="polymere" className="card-img-top" alt="..." />
+                  <img src={polymere} className="card-img-top" alt="..." />
                   <h5 className="inter_med">Polymers</h5>
                   <div className="card-body categorylist_button">
                     <button className="butto-primaryn">25K+ orders</button>
@@ -106,7 +102,7 @@ const Home = () => {
               </div>
               <div className="col">
                 <div className="card">
-                  <img src="textile" className="card-img-top" alt="..." />
+                  <img src={textile} className="card-img-top" alt="..." />
                   <h5 className="inter_med">Textile</h5>
                   <div className="card-body categorylist_button">
                     <button className="butto-primaryn">25K+ orders</button>
@@ -125,7 +121,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <img
-                    src="pharmaceuticals"
+                    src={pharmaceuticals}
                     className="card-img-top"
                     alt="..."
                   />
@@ -271,7 +267,7 @@ const Home = () => {
             </p>
             <div className="items_container pb-5">
               <div className="left_item">
-                <img src="rectangular" alt="img" className="rectangular" />
+                <img src={rectangular} alt="img" className="rectangular" />
                 <h3 className="pipe">square GI Pipe</h3>
                 <button className="add_quotes_btn">
                   <b> Add to quotes</b>
@@ -285,7 +281,7 @@ const Home = () => {
                 </button>
               </div>
               <div className="right_item">
-                <img src="square" alt="img" className="rectangular" />
+                <img src={square} alt="img" className="rectangular" />
                 <h3 className="pipe">Rectangular GI Pipe</h3>
                 <button className="add_quotes_btn">
                   <b> Add to quotes</b>

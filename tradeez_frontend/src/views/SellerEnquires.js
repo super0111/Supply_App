@@ -1,16 +1,17 @@
 import React from "react";
-import { Pagination, Table, Tabs } from "antd";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import AuthHeader from "../components/AuthHeader";
 import { useSelector } from "react-redux";
+import { BiCylinder } from "react-icons/bi";
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Tabs, Tab } from '@mui/material';
 
-const pageSize = 6;
-
-const { TabPane } = Tabs;
 const SellerEnquires = () => {
   const [data, setData] = useState([]);
   const [confirmationModal, setConfirmationModal] = useState(true);
+  const user = useSelector((state) => state.auth);
+  const [ tabValue, setTabValue ] = useState("1");
+
   const columns = [
     {
       title: "id",
@@ -57,11 +58,12 @@ const SellerEnquires = () => {
       },
     },
   ];
-  const user = useSelector((state) => state.auth);
+
   useEffect(() => {
     fetchQuations();
     console.log(user.user);
   }, []);
+
   const fetchQuations = () => {
     const token = localStorage.getItem("token");
     axios
@@ -77,16 +79,11 @@ const SellerEnquires = () => {
         setData(response.data);
       });
   };
-  const MyPagination = ({ total, onChange, current }) => {
-    return (
-      <Pagination
-        onChange={onChange}
-        total={total}
-        current={current}
-        pageSize={pageSize}
-      />
-    );
+  
+  const handleTabChange = (event, newValue) => {
+    setTabValue(newValue);
   };
+
   return (
     <div className="container_gap">
       <AuthHeader />
@@ -95,26 +92,53 @@ const SellerEnquires = () => {
           <h2>Enquires</h2>
         </div>
       </div>
-      <div className="content-section">
-        <Tabs defaultActiveKey="1">
-          <TabPane tab="Recived" key="1">
-            <Table
-              columns={columns}
-              dataSource={data}
-              pagination={true}
-              position="['bottomCenter']"
-            />
-          </TabPane>
-          <TabPane tab="Finalised" key="2">
-            Hellooo
-          </TabPane>
+      <div className="d-flex flex-column content-section">
+        <Tabs
+          value={tabValue}
+          onChange={handleTabChange}
+          aria-label="wrapped label tabs example"
+          sx={{
+            borderBottom: "1px solid #dad4d4",
+          }}
+        >
+          <Tab
+            value="1"
+            label="Recived"
+            wrapped
+          />
+          <Tab value="2" label="Finalised" />
         </Tabs>
+        { 
+          tabValue === "1" ?
+          <>
+            <TableContainer component={Paper} sx={{ marginTop: "20px" }}>
+              <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+                <TableHead sx={{height: "50px", background: "#fafbf9"}}>
+                  <TableRow>
+                    {columns.map((item, i)=>(
+                      <TableCell align="center">{item.title}</TableCell>
+                    ))}
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>        
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
+            <div className="d-flex justify-content-center w-100 mt-4">
+              <div className="d-flex flex-column justify-content-center align-items-center">
+                <div>
+                  <BiCylinder size={30} color="#898E95" />
+                </div>
+                <div style={{color: "#898E95"}}>No Data</div>
+                </div>
+            </div>
+          </>
+          : tabValue === "2" ? <div style={{margin: "20px"}}>Hoooooo</div> 
+          : ""
+        }
       </div>
-      {/* <Modal title="Basic Modal" visible={confirmationModal}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-      </Modal> */}
     </div>
   );
 };

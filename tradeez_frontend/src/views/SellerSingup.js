@@ -43,7 +43,7 @@ const Signup = () => {
       <div className="container">
         <div className="row">
           <div className="col-6">
-            <img style={{width: "100%"}} src={Image} />
+            <img style={{ width: "100%" }} src={Image} />
           </div>
           <div className="col-6">
             <h3>Get’s started.</h3>

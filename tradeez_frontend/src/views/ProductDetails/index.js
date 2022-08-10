@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import AuthHeader from "../../components/AuthHeader";
 
-import Top from "./Top"
-import BoughtTogether from "./BoughtTogether"
-import { useDispatch, useSelector } from "react-redux";
+import Top from "./Top";
+import BoughtTogether from "./BoughtTogether";
+import { useSelector } from "react-redux";
 
 const ProductView = () => {
   let { id } = useParams();
-  const [ productDetails, setProductDetails ] = useState();
+  const [ productDetails, setProductDetails] = useState();
   const userInfo = useSelector((state) => state.auth);
-  console.log("userInfo", userInfo)
-  useEffect(()=>{ 
-    fetchProductDetails()
-  }, [])
+
+  useEffect(() => {
+    fetchProductDetails();
+  }, []);
 
   const fetchProductDetails = () => {
-    console.log("fetch id",id)
     axios
       .get(`${process.env.REACT_APP_API_URL}products/productDetails/${id}`, {
         headers: { Authorization: `Bearer ${userInfo.user.token}` },
@@ -27,12 +27,15 @@ const ProductView = () => {
   };
 
   return (
-    <div className="details1">
-      <div style={{ padding: '50px 0px' }}>
-        <Top productDetails={productDetails}/>
-        <BoughtTogether />
+    <div className="container_gap">
+      <AuthHeader />
+      <div className="details1">
+        <div style={{ padding: "30px 0px" }}>
+          <Top productDetails={productDetails} />
+          <BoughtTogether />
+        </div>
       </div>
     </div>
-  )
-}
-export default ProductView
+  );
+};
+export default ProductView;

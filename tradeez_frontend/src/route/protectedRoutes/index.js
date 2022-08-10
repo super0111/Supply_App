@@ -7,7 +7,6 @@ import Quotations from "../../views/Quotations";
 import Myaccount from "../../views/Myaccount";
 import SubProduct from "../../views/SubProduct";
 import AddQuote from "../../views/AddQuote";
-import Categories from "../../views/Categories";
 import ProtectedRoute from "../../components/ProtectedRoute";
 import ProductDetails from "../../views/ProductDetails";
 import SellerProduct from "../../views/SellerProducts";
@@ -23,23 +22,6 @@ import roles from "../../config/roles";
 const ProtectedRoutes = () => {
   return (
     <Routes>
-      {/* <Route
-        element={
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ProtectedRoute />
-          </div>
-        }
-      >
-        <Route path=":product/:subproduct" element={<SubProduct />} />
-        <Route path="quotations" element={<Quotations />} />
-        <Route path="account" element={<Myaccount />} />
-        <Route
-          path="product/:product/:subproduct/addquote"
-          element={<AddQuote />}
-        />
-        <Route path="product/:product/addquote" element={<AddQuote />} />
-      </Route> */}
-
       <Route
         element={
           <div style={{ display: "flex", flexDirection: "row" }}>
@@ -47,16 +29,12 @@ const ProtectedRoutes = () => {
           </div>
         }
       >
-        {/* <Route path="product" element={<Categories />} /> */}
         <Route path="product" element={<Product />} />
         <Route path="productList" element={<ProductList />} />
         <Route path="product/:product/:subproduct" element={<SubProduct />} />
         <Route path="quotations" element={<Quotations />} />
         <Route path="account" element={<Myaccount />} />
-        <Route
-          path="product/:product/:subproduct/addquote"
-          element={<AddQuote />}
-        />
+        <Route  path="product/:product/:subproduct/addquote" element={<AddQuote />} />
         <Route path="product/:product/addquote" element={<AddQuote />} />
         <Route path="orders" element={<Orders />} />
         <Route path="payment" element={<Payment />} />

@@ -1,20 +1,18 @@
 import React from "react";
-//import { Tabs } from "antd";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import AuthHeader from "../components/AuthHeader";
 import { useSelector } from "react-redux";
 
-//const pageSize = 6;
-
-//const { TabPane } = Tabs;
-
 const SellerAccount = () => {
+
   const user = useSelector((state) => state.auth);
   const [data, setData] = useState([]);
+
   useEffect(() => {
     fetchAccount();
   }, []);
+
   const fetchAccount = () => {
     const token = localStorage.getItem("token");
     axios
@@ -29,6 +27,7 @@ const SellerAccount = () => {
         setData(response.data);
       });
   };
+  
   return (
     <div className="container_gap">
       <AuthHeader />

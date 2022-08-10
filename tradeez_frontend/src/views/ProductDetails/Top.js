@@ -1,9 +1,10 @@
-import { Box, Button, Grid, Paper, TableContainer, Table, TableBody, TableCell, TableRow, TextField  } from '@mui/material'; 
+import { Box, Button, Grid, Paper, TableContainer, Table, TableBody, TableCell, TableRow  } from '@mui/material'; 
 import { useState } from 'react';
 import { BsChevronRight } from "react-icons/bs";
 import Carousel from "react-img-carousel";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import { BiHeart } from "react-icons/bi";
 
 const imgs =  [
   { url: "/images/details/1 (4).png" },
@@ -62,6 +63,9 @@ const Top = (props) => {
           <Box display="flex" flexDirection="column" justifyContent="space-between">
             <div className='img_field'>
               <img src={imgs[selectedImg].url}/>
+              <div className='cart_status'>
+                <BiHeart color="#4C514E" />
+              </div>
             </div>
             <div className='img_item'>
               {
@@ -181,43 +185,62 @@ const Top = (props) => {
                   ) : null}
                 </Grid> 
               : "" }
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    width: "150px",
-                    fontSize: "14px",
-                    margin: "15px 0 5px 0",
-                    color: "#212738",
-                    borderColor: "#212738"
-                  }}
-                  onClick={()=>setIsShow(!isShow)}
-                >
-                  Quick Quote
-                </Button>
-                <Button
-                  variant="outlined"
-                  type='submit'
-                  sx={{
-                    width: "150px",
-                    fontSize: "14px",
-                    margin: "5px 0 10px 0",
-                    color: "#212738",
-                    borderColor: "#212738"
-                  }}
-                >
-                  Add To Cart
-                </Button>
+              <div className='d-flex'>
+                <div className='d-flex flex-column'>
+                  <Button
+                    variant="outlined"
+                    sx={{
+                      width: "150px",
+                      fontSize: "14px",
+                      margin: "15px 0 5px 0",
+                      color: "#212738",
+                      borderColor: "#212738"
+                    }}
+                    onClick={()=>setIsShow(!isShow)}
+                  >
+                    Quick Quote
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    type='submit'
+                    sx={{
+                      width: "150px",
+                      fontSize: "14px",
+                      margin: "5px 0 10px 0",
+                      color: "#212738",
+                      borderColor: "#212738"
+                    }}
+                  >
+                    Add To Cart
+                  </Button>
+                </div>
+                <div>
+                  <Button
+                    variant="outlined"
+                    sx={{
+                      width: "150px",
+                      fontSize: "14px",
+                      margin: "15px 0 5px 25px",
+                      color: "#212738",
+                      borderColor: "#212738",
+                      width: "100%",
+                      height: "37px",
+                    }}
+                  >
+                    Request Sample
+                  </Button>
+                </div>
               </div>
+
             </form>
           </Box>
 
-          <div className='title_mid'>
-            Specifications For This Item
-          </div>
+          <div className='title_mid'>Specifications For This Item</div>
           <TableContainer 
             component={Paper}
-            sx={{ width: "100%" }}
+            sx={{
+              width: "100%"
+            }}
           >
             <Table 
               sx={{ 

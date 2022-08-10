@@ -10,10 +10,7 @@ import Header from "../components/Header";
 import CustomSelect from "../components/CustomSelect";
 import { loginSuccess } from "../store/action/auth";
 
-//import { Link, Navigate } from "react-router-dom";
-
 const productsoptions = [{ label: "product 1", value: "product 1" }];
-
 const Validation = yup.object().shape({
   email: yup.string().email().required("Please Enter your Email"),
   companyName: yup.string().required("Please Enter your First name"),
@@ -74,12 +71,6 @@ const AddAccountDetails = () => {
           }}
         >
           {({
-            values,
-            touched,
-            dirty,
-            errors,
-            isSubmitting,
-            handleChange,
             setFieldValue,
             setFieldTouched,
           }) => (

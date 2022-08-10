@@ -102,34 +102,6 @@ const AddProduct = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="row">
-                <div className="col-6 d-flex">
-                  <div className="d-flex">
-                    <div className="input-group mb-3">
-                      <Field
-                        type="text"
-                        className="form-control"
-                        placeholder="dimension"
-                      />
-                      <span className="input-group-text" id="basic-addon2">
-                        MM
-                      </span>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <div className="input-group mb-3">
-                      <Field
-                        type="text"
-                        className="form-control"
-                        placeholder="dimension"
-                      />
-                      <span className="input-group-text" id="basic-addon2">
-                        MM
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
               <div className="row">
                 <div className="col-6">
                   <Field

@@ -1,10 +1,10 @@
 import React from "react";
-import { Pagination, Table, Space, Tabs } from "antd";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import AuthHeader from "../components/AuthHeader";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 
 const columns = [
   {
@@ -37,20 +37,19 @@ const columns = [
     key: "action",
     render: (_, record) => {
       return (
-        <Space size="middle">
+        <div size="middle">
           <a>View</a>
-        </Space>
+        </div>
       );
     },
   },
 ];
-const pageSize = 6;
-
-const { TabPane } = Tabs;
 
 const SellerOrders = () => {
+  
   const [data, setData] = useState([]);
   const user = useSelector((state) => state.auth);
+
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}seller-products/${user.user.id}`, {
@@ -60,17 +59,7 @@ const SellerOrders = () => {
         setData(response.data);
       });
   }, []);
-  const fetchQuations = () => {};
-  const MyPagination = ({ total, onChange, current }) => {
-    return (
-      <Pagination
-        onChange={onChange}
-        total={total}
-        current={current}
-        pageSize={pageSize}
-      />
-    );
-  };
+
   return (
     <div className="container_gap">
       <AuthHeader />
@@ -83,12 +72,21 @@ const SellerOrders = () => {
         <div className="d-flex">
           <Link to="/seller-addProduct">Add Product</Link>
         </div>
-        <Table
-          columns={columns}
-          dataSource={data && data.length ? data : []}
-          pagination={true}
-          position="['bottomCenter']"
-        />
+        <TableContainer component={Paper} sx={{ marginTop: "20px" }}>
+              <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+                <TableHead sx={{height: "50px", background: "#fafbf9"}}>
+                  <TableRow>
+                    {columns.map((item, i)=>(
+                      <TableCell align="center">{item.title}</TableCell>
+                    ))}
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>        
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
       </div>
     </div>
   );
