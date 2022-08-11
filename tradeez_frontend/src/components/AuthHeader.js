@@ -43,10 +43,10 @@ const AuthHeader = () => {
         </div>
         <div className="divider"></div>
         <div className="d-flex justify-content-between align-items-center" >
-          <div onClick={handleClick} style={{ cursor: "pointer" }}>
+          <div style={{ cursor: "pointer" }}>
             <BiHeart color="rgb(80 88 82)" size={25} style={{marginRight: "15px"}} />
           </div>
-          <div onClick={handleClick} style={{ cursor: "pointer" }}>
+          <div style={{ cursor: "pointer" }}>
             <BiCart color="rgb(80 88 82)" size={25}style={{marginRight: "15px"}} />
           </div>
           <div onClick={handleClick} style={{ cursor: "pointer" }}>

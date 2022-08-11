@@ -46,7 +46,7 @@ const Top = (props) => {
   });
 
   return(
-    <div className="top" style={{padding:"0 50px"}}>
+    <div className="top" style={{padding:"0 30px"}}>
       <div className="title">Industry</div>
       <div className="title_text">Construction <BsChevronRight /> Cement <BsChevronRight /> PCC Cement</div>
       <Grid container

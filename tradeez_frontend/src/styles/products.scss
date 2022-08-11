@@ -470,14 +470,14 @@
     }
   }
   .boughtTogether {
-    padding: 20px;
     .dflex {
       display: flex;
       justify-content: center;
       align-items: center;
     }
     .title {
-      margin: 0 0 20px 0;
+      margin: 10px 0 20px 0;
+      padding-left: 30px;
       font-size: 18px;
       font-weight: 600;
     }
