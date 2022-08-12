@@ -124,7 +124,7 @@ const Payment = () => {
                 <TableHead sx={{height: "50px", background: "#fafbf9"}}>
                   <TableRow>
                     { columns.map((item, i)=>(
-                      <TableCell>{item.title}</TableCell>
+                      <TableCell key={i}>{item.title}</TableCell>
                     ))}
                   </TableRow>
                 </TableHead>

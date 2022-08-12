@@ -46,11 +46,12 @@ const Top = (props) => {
   });
 
   return(
-    <div className="top" style={{padding:"0 30px"}}>
+    <div className="top" style={{padding:"0"}}>
       <div className="title">Industry</div>
       <div className="title_text">Construction <BsChevronRight /> Cement <BsChevronRight /> PCC Cement</div>
       <Grid container
-        sx={{ 
+        sx={{
+          display: "flex",
           justifyContent: "space-between",
           padding: "20px"
         }}
@@ -71,9 +72,10 @@ const Top = (props) => {
               {
                 imgs.length && (
                   <Carousel
-                    viewportWidth="100%" 
+                    viewportWidth="100%"
                     cellPadding={5}
                     afterChange={(newIndex) => setSelectedImg(newIndex)}
+                    className="carousel_width container"
                   >
                     {imgs.map((img, i) => (
                       <div className='item_field' key={i} onClick={() => setSelectedImg(i)}>
@@ -96,10 +98,10 @@ const Top = (props) => {
           }}
           className="details"
         >
-          <div className='title'>{productDetails?.title}</div>
-          <p>{productDetails?.details1}</p>
-          <p>{productDetails?.details2}</p>
-          <Box display='flex' flexDirection="column">
+          <div className='title1'>{productDetails?.title}</div>
+          <span style={{color: "rgb(85, 84, 84)"}}>{productDetails?.details1}</span> <br></br>
+          <span style={{color: "rgb(85, 84, 84)"}}>{productDetails?.details2}</span>
+          <Box display='flex' flexDirection="column" sx={{marginTop: "15px"}}>
             <form className="form" onSubmit={formik.handleSubmit}>
               { isShow === true ?
                 <Grid container
@@ -107,7 +109,7 @@ const Top = (props) => {
                     justifyContent: "space-between"
                   }}
                 >
-                  <Grid md={6} sm={6} xs={12}
+                  <Grid item md={6} sm={6} xs={12}
                     sx={{
                       maxWidth: "48%",
                       '@media (max-width: 900px)' : {
@@ -140,7 +142,7 @@ const Top = (props) => {
                       ) : null}
                     </div>
                   </Grid>
-                  <Grid md={6} sm={6} xs={12}
+                  <Grid item md={6} sm={6} xs={12}
                     sx={{
                       maxWidth: "48%",
                       '@media (max-width: 900px)' : {
@@ -148,7 +150,7 @@ const Top = (props) => {
                       }
                     }}
                   >
-                    <div className='dflex'>
+                    <div className='dflex' style={{marginLeft: "10px"}}>
                       <strong>Price Target</strong>
                       <input
                         type="text"
@@ -160,7 +162,7 @@ const Top = (props) => {
                         <div className="is-invalid">{formik.errors.field3}</div>
                       ) : null}
                     </div>
-                    <div className='dflex'>
+                    <div className='dflex' style={{marginLeft: "10px"}}>
                       <strong>Delivery Frequency</strong>
                       <input
                         type="text"
@@ -244,7 +246,6 @@ const Top = (props) => {
           >
             <Table 
               sx={{ 
-                minWidth: 550, 
                 background: "white", 
                 borderRadius: "5px",
                 overflowX:'auto'

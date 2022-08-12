@@ -352,25 +352,27 @@
 .details1 {
   width: 99%;
   background-color: white;
-  border-left: 1px solid #dddddd;
   .top {
+    margin: auto;
     .dflex {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .fontBold {
       font-weight: 600;
     }
     .title {
+      margin-left: 30px;
       font-weight: 600;
       font-size: 18px;
     }
     .title_text {
+      margin-left: 30px;
       font-size: 15px;
       color: #666565;
     }
     .img_field {
       width: 100%;
-      padding: 10px -10px;
+      padding: 25px !important;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -400,6 +402,46 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 10px;
+      .carousel_width { max-width: 800px; }
+      @media screen and (max-width: 1000px) {
+        .carousel_width { max-width: 750px; }
+      }
+      @media screen and (max-width: 950px) {
+        .carousel_width { max-width: 700px; }
+      }
+      @media screen and (max-width: 900px) {
+        .carousel_width { max-width: 650px; }
+      }
+      @media screen and (max-width: 850px) {
+        .carousel_width { max-width: 600px; }
+      }
+      @media screen and (max-width: 800px) {
+        .carousel_width { max-width: 550px; }
+      }
+      @media screen and (max-width: 750px) {
+        .carousel_width { max-width: 500px; }
+      }
+      @media screen and (max-width: 700px) {
+        .carousel_width { max-width: 450px; }
+      }
+      @media screen and (max-width: 650px) {
+        .carousel_width { max-width: 400px; }
+      }
+      @media screen and (max-width: 600px) {
+        .carousel_width { max-width: 350px; }
+      }
+      @media screen and (max-width: 550px) {
+        .carousel_width { max-width: 400px; }
+      }
+      @media screen and (max-width: 500px) {
+        .carousel_width { max-width: 350px; }
+      }
+      @media screen and (max-width: 450px) {
+        .carousel_width { max-width: 300px; }
+      }
+      @media screen and (max-width: 400px) {
+        .carousel_width { max-width: 250px; }
+      }
       .item_field {
         background-color: #efe9e9;
         border-radius: 5px;
@@ -437,18 +479,16 @@
       }
     }
     .details {
-      .title {
+      .title1 {
         font-size: 20px;
         font-weight: 600;
-      }
-      p {
-        color: rgb(85, 84, 84);
+        margin-bottom: 15px;
       }
       .title_mid {
         font-size: 15px;
         font-weight: 600;
         color: rgb(54, 54, 54);
-        margin: 20px 0;
+        margin: 10px 0;
       }
       .price {
         font-size: 14px;
@@ -457,7 +497,7 @@
         margin-bottom: 10px;
       }
       .text_input {
-        width: 90%;
+        width: 100%;
         margin-top: 5px;
         border: 1px solid #BBBBBB;
         padding: 10px;
@@ -470,6 +510,7 @@
     }
   }
   .boughtTogether {
+    margin: auto;
     .dflex {
       display: flex;
       justify-content: center;
@@ -481,15 +522,105 @@
       font-size: 18px;
       font-weight: 600;
     }
+    @media screen and (max-width: 1400px) {
+      .title { padding-left: 20px; }
+    }
+    .carousels {
+      max-width: 1700px;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+    @media screen and (max-width: 1950px) {
+      .carousels { max-width: 1650px; }
+    }
+    @media screen and (max-width: 1900px) {
+      .carousels { max-width: 1600px; }
+    }
+    @media screen and (max-width: 1850px) {
+      .carousels { max-width: 1550px; }
+    }
+    @media screen and (max-width: 1800px) {
+      .carousels { max-width: 1450px; }
+    }
+    @media screen and (max-width: 1750px) {
+      .carousels { max-width: 1400px; }
+    }
+    @media screen and (max-width: 1700px) {
+      .carousels { max-width: 1350px; }
+    }
+    @media screen and (max-width: 1650px) {
+      .carousels { max-width: 1300px; }
+    }
+    @media screen and (max-width: 1600px) {
+      .carousels { max-width: 1250px; }
+    }
+    @media screen and (max-width: 1500px) {
+      .carousels { max-width: 1200px; }
+    }
+    @media screen and (max-width: 1400px) {
+      .carousels { max-width: 1150px; }
+    }
+    @media screen and (max-width: 1350px) {
+      .carousels { max-width: 1100px; }
+    }
+    @media screen and (max-width: 1300px) {
+      .carousels { max-width: 1050px; }
+    }
+    @media screen and (max-width: 1250px) {
+      .carousels { max-width: 1000px; }
+    }
+    @media screen and (max-width: 1200px) {
+      .carousels { max-width: 950px; }
+    }
+    @media screen and (max-width: 1150px) {
+      .carousels { max-width: 900px; }
+    }
+    @media screen and (max-width: 1100px) {
+      .carousels { max-width: 850px; }
+    }
+    @media screen and (max-width: 1050px) {
+      .carousels { max-width: 800px; }
+    }
+    @media screen and (max-width: 1000px) {
+      .carousels { max-width: 750px; }
+    }
+    @media screen and (max-width: 950px) {
+      .carousels { max-width: 700px; }
+    }
+    @media screen and (max-width: 900px) {
+      .carousels { max-width: 650px; }
+    }
+    @media screen and (max-width: 850px) {
+      .carousels { max-width: 600px; }
+    }
+    @media screen and (max-width: 800px) {
+      .carousels { max-width: 550px; }
+    }
+    @media screen and (max-width: 750px) {
+      .carousels { max-width: 500px; } 
+    }
+    @media screen and (max-width: 700px) {
+      .carousels { max-width: 450px; }
+    }
+    @media screen and (max-width: 650px) {
+      .carousels { max-width: 400px; }
+    }
+    @media screen and (max-width: 600px) {
+      .carousels { max-width: 380px; }
+    }
+    @media screen and (max-width: 550px) {
+      .carousels { max-width: 360px; }
+    }
+    @media screen and (max-width: 500px) {
+      .carousels { max-width: 350px; }
+    }
+    @media screen and (max-width: 450px) {
+      .carousels { max-width: 300px; }
+    }
     .cart_icon {
       font-size: 25px;
       margin-left: 10px;
     }
-  .aaa {
-          display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
     .item {
       .item_body {
         border: 1px solid #EDE9E9;
@@ -501,7 +632,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
       }
     }
     .body {

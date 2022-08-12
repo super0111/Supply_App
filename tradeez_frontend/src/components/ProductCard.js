@@ -7,7 +7,7 @@ const ProductCard = ({ id, image, title, value }) => {
   const navigate = useNavigate()
 
   return (
-    <Grid md={2}>
+    <Grid key={id} item md={2}>
       <div style={{padding: "5px"}}>
         <div className="productCartContainer">
           <div className="main1">

@@ -28,7 +28,7 @@ const SubProduct = () => {
           {categoriesList &&
             categoriesList.length &&
             categoriesList?.map((category, index) => (
-              <div className="p-3">
+              <div key={index} className="p-3">
                 <div className="miniCard" key={index}>
                   <img src={category.img} alt="stock" />
                   <Link

@@ -46,7 +46,7 @@ const Product = () => {
             {products &&
               products.length &&
               products?.map((category, index) => (
-                <div className="p-3">
+                <div className="p-3" key={index}>
                   <div className="miniCard" key={index}>
                     <div>
                       <img

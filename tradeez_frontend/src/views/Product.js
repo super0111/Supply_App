@@ -41,7 +41,7 @@ const Product = (props) => {
             {products.map((d, i) => {
               if (i < 6) {
                 return (
-                  <div className="innerContainer navlink">
+                  <div key={i} className="innerContainer navlink">
                     <img src={d.img} className="img" />
                     <div className="innerContainermain">
                       <Link

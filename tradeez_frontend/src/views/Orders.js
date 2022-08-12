@@ -125,7 +125,7 @@ const Orders = () => {
                 <TableHead sx={{height: "50px", background: "#fafbf9"}}>
                   <TableRow>
                     {columns.map((item, i)=>(
-                      <TableCell align="center">{item.title}</TableCell>
+                      <TableCell key={i} align="center">{item.title}</TableCell>
                     ))}
                   </TableRow>
                 </TableHead>
@@ -133,7 +133,7 @@ const Orders = () => {
                   {
                     data.length > 0 ?
                     data.map((row, i)=> (
-                    <TableRow>
+                    <TableRow key={i}>
                       <TableCell align="center">{i+1}</TableCell>
                       <TableCell align="center">{row.categoryValue}</TableCell>
                       <TableCell align="center">{row.productvalue}</TableCell>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import { BiCart } from "react-icons/bi";
 import Carousel from "react-img-carousel";
 require("react-img-carousel/lib/carousel.css");
@@ -93,21 +93,21 @@ const items = [
 
 const BoughtTogether = () => {
   return (
-    <div className="boughtTogether">
+    <div className="boughtTogether" style={{padding: "0px"}}>
       <div className="title">Frequently Bought Together</div>
       {items.length && (
-        <div style={{width: "98%", margin: "auto"}}>
+        <Grid container sx={{padding: "0 20px"}}>
           <Carousel
             cellPadding={10}
-            slideAlignment={"center"}
-            className="container"
+            slideAlignment={"left"}
+            className="container carousels"
           >
-            {items.map((item) => (
-              <div className="item" style={{ width: "280px" }}>
+            {items.map((item, i) => (
+              <div className="item" key={i} style={{ width: "240px" }}>
                 <div className="item_body">
                   <div className="img_field">
                     <img
-                      width="90px"
+                      width="150px"
                       height="190px"
                       src={item.url}
                       alt="image"
@@ -135,7 +135,7 @@ const BoughtTogether = () => {
               </div>
             ))}
           </Carousel>
-        </div>
+        </Grid>
       )}
     </div>
   );

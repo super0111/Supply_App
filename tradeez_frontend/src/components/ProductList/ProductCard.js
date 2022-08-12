@@ -10,7 +10,7 @@ const ProductCard = ({ product_id, title, text, url }) => {
   }
 
   return (
-    <Grid item lg={2} md={3} sm={6} xs={12}>
+    <Grid id={product_id} item lg={2} md={3} sm={6} xs={12}>
       <div className="productCard" onClick={()=>handleSelectProduct(product_id)}>
         <div className="card_img">
           <img src={url} />

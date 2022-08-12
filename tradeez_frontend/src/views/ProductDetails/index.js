@@ -29,11 +29,9 @@ const ProductView = () => {
   return (
     <div className="container_gap">
       <AuthHeader />
-      <div className="details1">
-        <div style={{ padding: "30px 0px" }}>
-          <Top productDetails={productDetails} />
-          <BoughtTogether />
-        </div>
+      <div className="details1" style={{ padding: "30px 0px" }}>
+        <Top productDetails={productDetails} />
+        <BoughtTogether />
       </div>
     </div>
   );

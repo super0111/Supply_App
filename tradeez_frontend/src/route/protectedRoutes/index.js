@@ -24,7 +24,7 @@ const ProtectedRoutes = () => {
     <Routes>
       <Route
         element={
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div  style={{ display: "flex", flexDirection: "row"}}>
             <ProtectedRoute role={roles.Buyer} />
           </div>
         }
