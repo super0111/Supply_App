@@ -9,14 +9,41 @@
 // Colors
 $yellow: #fce473;
 $pink: #c71585;
+$red: rgba(232, 233, 235, 0.5);
 $green: #46b13d;
 $green-active: #0ca000;
 $blue: #1d90ff;
 $grey: #999999;
 $grey-active: #cecece;
 $light-grey: #f1f1f1;
-$white: #ffffff;
 $black: #000000;
+
+$whiteColor: white;
+$mainContinerTtile: #1b202e;
+$homeColor: rgba(232, 233, 235, 0.5);
+$background2: #f6f4f4;
+$fontColor1: #312828;
+$textColor: #666565;
+$buttonColor1: #d6ebff;
+$buttonColor2: #6495ed;
+$buttonColor3: #0070d2;
+$buttonTextColor: #213b64;
+$validColor: #c71585;
+$boxshaowColor: #c3c3c3;
+$borderColor: #e8e2e2;
+
+$font40: 40px;
+$font38: 38px;
+$font36: 36px;
+$font34: 34px;
+$font32: 32px;
+$font25: 25px;
+$font20: 20px;
+$font18: 18px;
+$font16: 16px;
+$font15: 15px;
+$font14: 14px;
+$font12: 12px;
 
 $primary-color: $green;
 $secondary-color: $yellow;
@@ -38,7 +65,7 @@ $desktop-space: 35px;
 @import "header";
 @import "common";
 @import "home";
-@import "SideBar";
+// @import "SideBar";
 @import "banner";
 @import "footer";
 @import "login";
@@ -48,5 +75,5 @@ $desktop-space: 35px;
 
 body {
   font-family: $primary-font;
-  background-color: #fff;
+  background-color: $background2;
 }

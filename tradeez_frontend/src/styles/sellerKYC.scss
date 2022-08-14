@@ -1,59 +1,59 @@
 .sellerkyc{
     padding: 10px;
     & .panel{
-        box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.1);
+        box-shadow: 0px 5px 10px -2px $black;
         margin: 30px 0px;
         & .title{
             display: inline-block;
             width: 100%;
-            font-size: 32px;
+            font-size: $font32;
             height: 75px;
             padding: 10px 10px;
-            background: #FFFFFF;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background: $background2;
+            box-shadow: 0px 4px 4px $black;
             padding-bottom: 80px;
         }
         & .section{
-            background-color: #fff;
+            background-color: $background2;
             padding: 10px 10px;
-            background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background: $background2;
+            box-shadow: 0px 4px 4px $black;
             & input{
-                filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+                filter: drop-shadow(0px 0px 0px $black);
             }
         }
     }
 }
 .submit2 {
-    background-color: #F2F1F2;
+    background-color: $background2;
     padding: 50px;
     .header {
       padding: 20px 40px 50px 40px;
-      background: #FFFFFF;
-      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+      background: $background2;
+      box-shadow: 0px 1px 2px $black;
       span {
-        font-size: 18px;
+        font-size: $font18;
         font-weight: 700;
-        color: #212738;
+        color: $buttonTextColor;
       }
     }
     .body {
       padding: 20px 40px 50px 40px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 4px $black;
       .body_title {
-        font-size: 17px;
+        font-size: $font16;
         font-weight: 600;
-        color: #212738;
+        color: $buttonTextColor;
         margin-bottom: 10px;
       }
       .upload {
         width: 70%;
-        background-color: white;
-        color: #A4A2A2;
+        background-color: $whiteColor;
+        color: $textColor;
         border: none;
         box-shadow: none;
-        border-bottom: 1px solid #A4A2A2;
-        border-left: 1px solid #A4A2A2;
+        border-bottom: 1px solid $textColor;
+        border-left: 1px solid $textColor;
         display: flex;
         padding: 15px;
       }
@@ -65,27 +65,27 @@
     }
     .body2 {
       padding: 20px 40px 50px 40px;
-      background: rgba(255, 255, 255, 0.8);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background: $background2;
+      box-shadow: 0px 4px 4px $black;
       .body_field {
         width: 50%;
         span {
-          color: #878686;
+          color: $textColor;
         }
         .small_text {
-          font-size: 12px;
+          font-size: $font12;
         }
       }
       .uplaod_field {
         width: 10%;
       }
       .upload2 {
-        background-color: white;
-        color: #A4A2A2;
+        background-color: $whiteColor;
+        color: $textColor;
         border: none;
         box-shadow: none;
-        border-bottom: 1px solid #A4A2A2;
-        border-left: 1px solid #A4A2A2;
+        border-bottom: 1px solid $textColor;
+        border-left: 1px solid $textColor;
         display: flex;
         padding: 15px;
       }
@@ -99,17 +99,17 @@
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
-      color: #212738;
+      font-size: $font16;
+      color: $buttonColor3;
     }
     .text_red {
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
+      font-size: $font16;
       line-height: 28px;
       text-transform: capitalize;
-      color: #F74952;
+      color: $validColor;
     }
   }
 
@@ -136,7 +136,7 @@
     }
   }
   .is-invalid {
-    font-size: 15px;
-    color: #f9241e;
+    font-size: $font15;
+    color: $validColor;
     margin: 5px;
   }

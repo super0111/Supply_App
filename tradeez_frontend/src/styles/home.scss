@@ -9,7 +9,7 @@
       width: 200px;
       margin: 10px 20px;
       padding: 10px;
-      background-color: #f7f7f7;
+      background-color: $background2;
     }
     & img {
       object-fit: contain;
@@ -42,8 +42,8 @@
       & .button-secondary {
         padding: 5px;
         border: 0px;
-        background-color: #212738;
-        color: #fff;
+        background-color: $buttonTextColor;
+        color: $background2;
         margin: 2px 0px;
         text-transform: capitalize;
       }
@@ -51,12 +51,12 @@
   }
   & .inter {
     font-weight: 900;
-    color: #203751;
+    color: $buttonTextColor;
     font-family: Inter;
   }
   & .inter_med {
     font-weight: 400;
-    color: #203751;
+    color: $buttonTextColor;
     font-family: Inter;
   }
   & .category {
@@ -71,8 +71,8 @@
     padding: 10px;
     font-family: Inter;
     font-weight: 700;
-    background-color: #212738;
-    color: white;
+    background-color: $buttonTextColor;
+    color: $whiteColor;
   }
 
   & .quotes_section {
@@ -99,12 +99,11 @@
       @media (max-width: 768px) {
         height: 370px;
       }
-
       height: 300px;
       min-width: 150px;
       margin: 20px;
       padding: 30px 10px 0 10px;
-      background-color: rgba(232, 233, 235, 0.5);
+      background-color: $homeColor;
       background-size: cover;
       border-radius: 5px;
     }
@@ -121,7 +120,7 @@
     width: 500px;
     margin: 50px 0 0 40px;
     position: absolute;
-    border: 2px solid white;
+    border: 2px solid $whiteColor;
   }
   & .process {
     display: flex;
@@ -129,12 +128,12 @@
     align-items: center;
     flex-flow: column;
     background-image: url("../assests/images/about.png");
-    color: #fff;
+    color: $background2;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 42px 0px;
     & h3 {
-      font-size: 24px;
+      font-size: $font25;
       font-weight: bold;
       padding-bottom: 10px;
     }
@@ -147,15 +146,15 @@
     }
     & .rounded_effect {
       border-radius: 55px;
-      background-color: #f2f1f1;
+      background-color: $background2;
       width: 100px;
       height: 100px;
       vertical-align: middle;
-      color: #000;
+      color: $black;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 38px;
+      font-size: $font38;
       margin-bottom: 10%;
     }
   }
@@ -163,14 +162,14 @@
     margin: 30px 0;
     text-align: center;
     & h3 {
-      color: #00202a;
-      font-size: 32px;
+      color: $buttonColor1;
+      font-size: $font32;
       font-weight: bold;
       padding-bottom: 26px;
     }
     & button {
-      background-color: #f74952;
-      color: #fff;
+      background-color: $red;
+      color: $background2;
       border: none;
       box-shadow: none;
       padding: 8px 25px;
@@ -179,17 +178,17 @@
   }
   & .get_started {
     font-family: Inter;
-    color: white;
-    font-size: 32px;
+    color: $whiteColor;
+    font-size: $font32;
     font-weight: 900;
   }
   & .best_prices {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: $font36;
     font-family: Inter;
-    stroke: black;
-    filter: drop-shadow(0 1px 0.1rem #203751);
-    color: #203751;
+    stroke: $black;
+    filter: drop-shadow(0 1px 0.1rem $buttonTextColor);
+    color: $buttonTextColor;
   }
   & .left_item {
     display: flex;
@@ -218,15 +217,15 @@
     z-index: 999;
   }
   & .add_quotes_btn {
-    background-color: white;
-    color: #6495ed;
-    border: 2px solid #6495ed;
+    background-color: $whiteColor;
+    color: $buttonColor2;
+    border: 2px solid $buttonColor2;
     height: 60px;
     width: 210px;
   }
   & .pipe {
     font-weight: 700;
-    color: #939bb0;
+    color: $textColor;
   }
   & .rectangular {
     width: 50%;
@@ -254,11 +253,11 @@
     background-position: top center;
     padding: 30px 0px;
     & h3 {
-      font-size: 34px;
+      font-size: $font34;
       font-weight: bolder;
     }
     & h4 {
-      font-size: 32px;
+      font-size: $font32;
       font-weight: bold;
       padding: 10px 23%;
     }
@@ -270,11 +269,11 @@
         flex-flow: column;
         padding: 45px 0px;
         & .counts {
-          font-size: 24px;
+          font-size: $font25;
           font-weight: bold;
         }
         & .desc {
-          font-size: 16px;
+          font-size: $font16
         }
       }
     }

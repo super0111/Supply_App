@@ -22,7 +22,7 @@ const AuthHeader = () => {
   };
 
   return (
-    <div className="container_space">
+    <div className="container_space headerBackground">
       <div className="d-flex justify-content-start align-items-center container_relative search_input">
         <div>
           <input

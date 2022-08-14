@@ -99,7 +99,7 @@ const BoughtTogether = () => {
         <Grid container sx={{padding: "0 20px"}}>
           <Carousel
             cellPadding={10}
-            slideAlignment={"left"}
+            slideAlignment={"center"}
             className="container carousels"
           >
             {items.map((item, i) => (

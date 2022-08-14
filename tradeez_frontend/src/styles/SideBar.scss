@@ -1,28 +1,36 @@
+$whiteColor: white;
+$background2: #f6f4f4;
+$buttonColor2: #6495ed;
+$black: black;
+$font15: 15px;
+$font14: 14px;
+$font12: 12px;
+
 .header-wrapper {
   flex: 1;
   min-height: 100vh;
   min-width: 160px;
-  background: white;
-  border-right: 2px solid #f5f5f5;
+  background: $whiteColor;
+  border-right: 2px solid $background2;
   .active {
     display: flex;
     align-items: center;
     gap: 8px;
     padding-right: 2rem;
-    font-size: 5pt;
+    font-size: $font15;
     text-decoration: none;
-    background-color: #f4f6fc;
-    border-right: 0.2rem solid black;
-    color: black;
+    background-color: $background2;
+    border-right: 0.2rem solid $black;
+    color: $black;
   }
   .notactive {
     display: flex;
     align-items: center;
     gap: 8px;
     padding-right: 2rem;
-    font-size: 5pt;
+    font-size: $font15;
     text-decoration: none;
-    color: #6c7e98;
+    color: $buttonColor2;
   }
   & nav {
     min-height: "100%";
@@ -40,7 +48,8 @@
       margin: 0px 0px;
       list-style: none;
       & span {
-        font-size: 0.8rem;
+        font-size: $font14;
+        color: $black;
         font-family: Lato;
         font-weight: bold;
         margin: 0 0 0 0px;

@@ -1,5 +1,5 @@
 .proctScreenContainer {
-    background: #ffffff;
+    background: $background2;
     width: 100%;
     .container1 {
         .container1_col1 {
@@ -8,15 +8,15 @@
             padding-left: 17px;
             width: 100%;
             border-radius: 8px;
-            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 2px $boxshaowColor, 0px 2px 4px $boxshaowColor;
             .container1_col1_title {
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: $font20;
                 line-height: 24px;
                 text-transform: capitalize;
                 font-family: "Lato";
-                color: "#212738";
+                color: $buttonColor2;
             }
             .innerContainer {
                 display: flex;
@@ -30,10 +30,10 @@
                         font-family: "Lato";
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 14px;
+                        font-size: $font14;
                         line-height: 17px;
                         text-transform: capitalize;
-                        color: #212738;
+                        color: $buttonColor2;
                     }
                 }
             }
@@ -49,10 +49,10 @@
                     font-family: "Lato";
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 18px;
+                    font-size: $font18;
                     line-height: 17px;
                     text-transform: capitalize;
-                    color: #212738;
+                    color: $buttonColor2;
                 }
             }
         }
@@ -61,7 +61,7 @@
             .main {
                 width: 100%;
                 border-radius: 8;
-                background: #d9d9d9;
+                background: $background2;
                 height: 100%;
             }
         }
@@ -74,11 +74,11 @@
         margin-bottom: 20px;
         width: 100%;
         border-radius: 8px;
-        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 2px $black, 0px 2px 4px $black;
         .sliderTtile {
             font-style: normal;
             font-weight: 400;
-            font-size: 20px;
+            font-size: $font20;
             line-height: 24px;
             text-transform: capitalize;
             font-family: "Lato";
@@ -107,11 +107,11 @@
                             font-family: "Lato";
                             font-style: normal;
                             font-weight: 300;
-                            font-size: 14px;
+                            font-size: $font14;
                             line-height: 17px;
                             text-align: center;
                             text-transform: capitalize;
-                            color: #000000;
+                            color: $black;
                         }
                     }
                 }
@@ -125,13 +125,13 @@
                     width: 80px;
                     height: 80px;
                     border-radius: 50px;
-                    background: #e2f1f8;
+                    background: $buttonColor1;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     .imagecontainerMain {
                         border-radius: 50px;
-                        background: white;
+                        background: $whiteColor;
                         z-index: 999;
                         width: 45px;
                         height: 45px;
@@ -156,7 +156,7 @@
             margin-top: 20px;
             font-style: normal;
             font-weight: 600;
-            font-size: 20px;
+            font-size: $font20;
             line-height: 24px;
             text-transform: capitalize;
             font-family: "Lato";
@@ -166,11 +166,11 @@
             height: 240px;
             width: 100%;
             border-radius: 8px;
-            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 2px $boxshaowColor, 0px 2px 4px $boxshaowColor;
             cursor: pointer;
             .main1 {
                 height: 162.16px;
-                background: #e5e5e5;
+                background: $background2;
                 border-radius: 8px;
                 & img{
                     object-fit: contain;
@@ -183,19 +183,19 @@
                 padding-bottom: 12px;
                 .mainchild1 {
                     font-family: "Lato";
-                    font-size: 16px;
+                    font-size: $font16;
                     line-height: 19px;
                     font-weight: 400;
-                    color: #312828;
+                    color: $textColor;
                     font-style: "normal";
                 }
                 .mainchild2 {
-                    font-size: 12px;
+                    font-size: $font12;
                     font-family: "Lato";
                     padding-top: 5px;
                     line-height: 14px;
                     font-weight: 300;
-                    color: #312828;
+                    color: $textColor;
                     font-style: normal;
                 }
             }

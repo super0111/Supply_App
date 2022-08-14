@@ -5,7 +5,7 @@
 	border: none;
     &.primary-button {
         background-color: $primary-color;
-        color: $white;
+        color: $whiteColor;
         &:active {
             background-color: $green-active;
         }
@@ -38,7 +38,7 @@
 }
 
 .invalid{
-    color: #dc3545;
+    color: $validColor;
 }
 .signin{
     width: 100%;
@@ -51,7 +51,7 @@
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
-    background: #fff;
+    background: $whiteColor;
     padding: 20px;
     & .ant-tabs{
         width: 100%;
@@ -64,9 +64,12 @@
 .container_relative {
     position: relative;
 }
+.headerBackground {
+    background-color: $whiteColor;
+}
 .search_input {
     border: none;
-    background: #F7F7F7;
+    background: $background2;
     border-radius: 11px;
     padding: 5px 10px;
     margin-left: 10px;
@@ -76,7 +79,7 @@
         background: none;
     }
     input:focus {
-        color: #9ea0a2;
+        color: $textColor;
     }
 }
 .ant-table-wrapper{

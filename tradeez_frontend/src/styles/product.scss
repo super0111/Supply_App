@@ -29,21 +29,21 @@
  
   & .company_name {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: $font18;
     padding: 0.8rem 0 0 0;
   }
   & .category_container {
     display: grid;
-    background: white;
+    background: $whiteColor;
     padding: 2rem 0.8rem 2rem 0.8rem;
     height: 100%;
   }
   & .categories {
     font-weight: 700;
     font-family: Lato;
-    font-size: 1.5rem;
+    font-size: $font25;
     margin-bottom: 1.2rem;
-    color: #4f5965;
+    color: $textColor;
   }
   & .category_list {
     display: flex;
@@ -57,30 +57,30 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: $font32;
     line-height: 38px;
     text-transform: capitalize;
-    color: #4F5965;
+    color: $textColor;
   }
   .text {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: $font20;
     line-height: 24px;
     text-transform: capitalize;
-    color: #898E95;
+    color: $textColor;
   }
   .productCard {
     width: 90%;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background: $background2;
+    box-shadow: 0px 0px 2px $boxshaowColor, 0px 2px 4px $boxshaowColor;
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
     .card_img {
       height: 150px;
-      background: #F2F2F2;
+      background: $background2;
       border-radius: 8px;
       display: flex;
       justify-content: center;
@@ -95,20 +95,20 @@
       font-family: 'Lato';
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
+      font-size: $font16;
       line-height: 19px;
       text-transform: capitalize;
-      color: #312828;
+      color: $textColor;
       margin-top: 12px;
     }
     .text {
       font-family: 'Lato';
       font-style: normal;
       font-weight: 300;
-      font-size: 12px;
+      font-size: $font12;
       line-height: 14px;
       text-transform: capitalize;
-      color: #312828;
+      color: $textColor;
       margin-top: 5px;
     }
   }

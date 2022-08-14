@@ -1,20 +1,21 @@
+
 .miniCard {
-  border: 2px solid #d6ebff;
+  border: 2px solid $buttonColor1;
   height: 200px;
   position: relative;
-  background-color: #f6f6f6;
+  background-color: $background2;
   & .img {
     width: 80%;
   }
   .buttonStyle {
-    background-color: #d6ebff;
+    background-color: $buttonColor1;
     border: none;
-    color: #213b64;
+    color: $buttonTextColor;
     display: flex;
     justify-content: center;
     margin: 5px 0px 0 12px;
     padding: 0.2rem 0.4rem;
-    font-size: 1.2rem;
+    font-size: $font15;
     font-weight: 700;
     font-family: Lato;
     width: 90%;
